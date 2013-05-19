@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+
+{% set title = 'Tag  &rsaquo; ' ~ tag.name %}
+
+{% block content %}
+    <h2>Tag &rsaquo; {{ tag.name }}</h2>
+
+    <section id="archive">
+        {% for year, archive in tag.archives %}
+        <section class="timeline-wrapper" id="year{{ year }}">
+            <h2>{{ year }}</h2>
+            <ul class="timeline">
+                {% for month, posts in archive.months %}
+                <li>
+                    <h3>{{ month }}</h3>
+                    {% for post in posts %}
+                    <span>
+                        <a href="{{ get_url(post.url) }}" title="">{{ post.title }}</a>
+                    </span>
+                    {% endfor %} {# end of post in posts #}
+                </li>
+                {% endfor %} {# end of month, posts in archive #}
+            </ul>
+        </section>
+        {% endfor%} {# end for for years #}
+    </section>
+{% endblock %}

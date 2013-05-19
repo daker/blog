@@ -1,0 +1,19 @@
+base_url: /
+domain:
+author: Adnane Belmadiaf
+description:
+email: daker@ubuntu.com
+title: Adnane Belmadiaf
+date_format: "%B %d, %Y"
+post_limit: 10
+posts_url: /<year>/<month>/<title>.html
+analytics:
+feed: true
+archive_layout: archive.html
+archives_url: /archives/
+jinja:
+    extensions:
+        - jinja2.ext.loopcontrols
+tag_layout: tag.html
+tags_url: /tags/
+pygmentize: false

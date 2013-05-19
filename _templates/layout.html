@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
+
+    {% block extrahead %}
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AdnaneBelmadiaf">
+    <meta property="twitter:image" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:url" content="">
+    <meta name="twitter:creator" content="@AdnaneBelmadiaf">
+    <meta property="og:description" content="">
+    <meta name="twitter:description" content="">
+    {% endblock %}
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-precomposed-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-precomposed-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-precomposed-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"></head>
+    <link rel="shortcut icon" href="{{ get_asset('images/favicon.ico') }}" type="image/x-icon">
+    {% if site.feed %}<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">{% endif %}
+    <link rel="stylesheet" href="{{ get_asset('css/styles.css') }}" type="text/css">
+    {% if site.pygmentize %}<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">{% endif %}
+
+{% if site.analytics %}
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '{{ site.analytics }}']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+{% endif %}
+
+</head>
+
+<body itemscope itemtype="http://schema.org/CreativeWork">
+    <div id="nav">
+        <a href="{{ get_url() }}">Blog</a>
+        <a href="{{ get_url('archives/') }}">Archives</a>
+        {% if site.feed %}<a href="{{ get_url('feed.xml') }}">Feed</a>{% endif %}
+    </div>
+    <div class="container" id="container">
+        <aside id="sidebar">
+            <a href="https://www.twitter.com/AdnaneBelmadiaf/" target="_blank" class="post-author-image" title="Go to my twitter profil">
+                <img src="">
+            </a>
+            <div class="post-author-info">
+                <a href="https://www.twitter.com/AdnaneBelmadiaf/" target="_blank" title="Go to my twitter profil" rel="author" class="post-author-name">Adnane Belmadiaf</a>
+                <p>
+                    Software engineer
+                </p>
+            </div>
+            {% block published %}{% endblock %}
+        </aside>
+
+        <article class="posts">
+            {% block content %}{% endblock %}
+        </article>
+    </div>
+
+    <footer id="footer">
+        <p class="copyright">{% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}</p>
+    </footer>
+</body>
+</html>

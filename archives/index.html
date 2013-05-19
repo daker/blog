@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block extrahead %}
+<title>Archives &ndash; {{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<meta name="title" content="">
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:site_name" content="Medium">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@AdnaneBelmadiaf">
+<meta property="twitter:image" content="">
+<meta property="twitter:title" content="">
+<meta property="twitter:url" content="https://medium.com/new-media/3828d6ae7e90">
+<meta name="twitter:creator" content="@AdnaneBelmadiaf">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
+{% endblock %}
+
+{% block content %}
+<section id="archive">
+    {% for year, archive in archives %}
+    <section class="timeline-wrapper" id="year{{ year }}">
+        <h2>{{ year }}</h2>
+        <ul class="timeline">
+            {% for month, posts in archive.months %}
+            <li>
+                <h3>{{ month }}</h3>
+                {% for post in posts %}
+                <span>
+                    <a href="{{ get_url(post.url) }}" title="">{{ post.title }}</a>
+                </span>
+                {% endfor %} {# end of post in posts #}
+            </li>
+            {% endfor %} {# end of month, posts in archive #}
+        </ul>
+    </section>
+    {% endfor%} {# end for for years #}
+</section>
+{% endblock %}
