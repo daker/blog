@@ -371,11 +371,6 @@ h1 {
     overflow: hidden;
     background: #fff;
     text-align: right;
-    width: 95px;
-    height: 95px;
-    -webkit-border-radius: 95px;
-    -moz-border-radius: 95px;
-    border-radius: 95px;
     margin: 0;
     margin-bottom: 10px;
     float: right;
@@ -383,10 +378,6 @@ h1 {
 
  .post-author-image img {
      width: 100%;
-     -webkit-border-radius: 95px;
-     -moz-border-radius: 95px;
-     border-radius: 95px;
-     background: #f2f2f0;
  }
 
  .post-published-date p,
