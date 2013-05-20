@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
     <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
     {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
-
-    {% block extrahead %}
-    <title>{{ site.title }}</title>
+    {% block extrahead %}<title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta name="title" content="">
     <meta property="og:image" content="">
@@ -20,9 +18,7 @@
     <meta property="twitter:url" content="">
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
     <meta property="og:description" content="">
-    <meta name="twitter:description" content="">
-    {% endblock %}
-
+    <meta name="twitter:description" content="">{% endblock %}
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-precomposed-144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-precomposed-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-precomposed-72.png">
@@ -31,7 +27,6 @@
     {% if site.feed %}<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">{% endif %}
     <link rel="stylesheet" href="{{ get_asset('css/styles.css') }}" type="text/css">
     {% if site.pygmentize %}<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">{% endif %}
-
 {% if site.analytics %}
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -45,7 +40,6 @@
         })();
     </script>
 {% endif %}
-
 </head>
 
 <body itemscope itemtype="http://schema.org/CreativeWork">
@@ -62,7 +56,7 @@
             <div class="post-author-info">
                 <a href="https://twitter.com/AdnaneBelmadiaf/" target="_blank" title="Go to my twitter profil" rel="author" class="post-author-name">Adnane Belmadiaf</a>
                 <p>
-                    Software engineer
+                    Front-end developer
                 </p>
             </div>
             {% block published %}{% endblock %}

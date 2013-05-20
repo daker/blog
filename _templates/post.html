@@ -1,21 +1,19 @@
 {% extends 'layout.html' %}
 
-{% block extrahead %}
-<title>{{ post.title }} &ndash; {{ site.title }}</title>
-<meta name="description" content="{{ site.description }}">
-<meta name="title" content="{{ post.title }}">
-<meta property="og:image" content="">
-<meta property="og:title" content="{{ post.title }}">
-<meta property="og:site_name" content="">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@AdnaneBelmadiaf">
-<meta property="twitter:image" content="">
-<meta property="twitter:title" content="{{ post.title }}">
-<meta property="twitter:url" content="">
-<meta name="twitter:creator" content="@AdnaneBelmadiaf">
-<meta property="og:description" content="">
-<meta name="twitter:description" content="">
-{% endblock %}
+{% block extrahead %}<title>{{ post.title }} &ndash; {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="title" content="{{ post.title }}">
+    <meta property="og:image" content="">
+    <meta property="og:title" content="{{ post.title }}">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AdnaneBelmadiaf">
+    <meta property="twitter:image" content="">
+    <meta property="twitter:title" content="{{ post.title }}">
+    <meta property="twitter:url" content="">
+    <meta name="twitter:creator" content="@AdnaneBelmadiaf">
+    <meta property="og:description" content="">
+    <meta name="twitter:description" content="">{% endblock %}
 
 {% block published %}
     <div class="post-published-date"> <strong>Published</strong>
