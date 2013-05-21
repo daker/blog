@@ -16,13 +16,15 @@
     <meta name="twitter:description" content="">{% endblock %}
 
 {% block published %}
-    <div class="post-published-date"> <strong>Published</strong>
+    <div class="post-published-date">
+        <strong>Published</strong>
         <p>
             <time class="post-date">{{ post.date }}</time>
         </p>
     </div>
     {% if post.tags %}
-    <div class="post-published-date"> <strong>Tags</strong>
+    <div class="post-tags">
+        <strong>Tags</strong>
         <p>
         {% for tag in post.tags %}
             <a href="{{ get_url(tags[tag].url) }}" itemprop="keywords">#{{ tag }}</a>
@@ -38,9 +40,7 @@
         <h1 itemprop="name headline" class="post-title">{{ post.title }}</h1>
     </header>
     <div class="post-content">
-        <div class="post-content-inner">
-            <div class="post-field body" itemprop="articleBody">{{ post.content }}</div>
-        </div>
+        <div class="post-field body" itemprop="articleBody">{{ post.content }}</div>
     </div>
 </article>
 <section id="comment">

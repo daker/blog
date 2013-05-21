@@ -421,6 +421,50 @@ h1 {
     color: #666665;
 }
 
+.post-tags {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.post-tags:before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #dededc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.post-tags strong {
+    font-weight: 700;
+    font-size: 14px;
+    color: #666665;
+}
+
+.post .body>ul,
+.post .body>ol {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.post .body>ol {
+    list-style-type: decimal;
+}
+
+.post .body>blockquote {
+    font-style: italic;
+    border-left: 4px solid #e9573f;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: -1px;
+    padding-bottom: 3px;
+}
+
 a.more {
     font-weight: bold;
     display: block;
