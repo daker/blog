@@ -9,7 +9,6 @@ post_limit: 10
 posts_url: /<year>/<month>/<title>.html
 analytics:
 feed: true
-archive_layout: archive.html
 archives_url: /archives/
 jinja:
     extensions:
