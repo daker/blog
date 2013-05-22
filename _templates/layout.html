@@ -8,17 +8,17 @@
     {% block extrahead %}<title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta name="title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:title" content="">
-    <meta property="og:site_name" content="">
+    <meta property="og:image" content="{{ get_asset('images/avatar.png') }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:site_name" content="Adnane Belmadiaf">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@AdnaneBelmadiaf">
-    <meta property="twitter:image" content="">
-    <meta property="twitter:title" content="">
-    <meta property="twitter:url" content="">
+    <meta property="twitter:image" content="{{ get_asset('images/avatar.png') }}">
+    <meta property="twitter:title" content="{{ site.title }}">
+    <meta property="twitter:url" content="http://daker.me">
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
-    <meta property="og:description" content="">
-    <meta name="twitter:description" content="">{% endblock %}
+    <meta property="og:description" content="{{ site.description }}">
+    <meta name="twitter:description" content="{{ site.description }}">{% endblock %}
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-precomposed-144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-precomposed-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-precomposed-72.png">
@@ -27,19 +27,15 @@
     {% if site.feed %}<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">{% endif %}
     <link rel="stylesheet" href="{{ get_asset('css/styles.css') }}" type="text/css">
     {% if site.pygmentize %}<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">{% endif %}
-{% if site.analytics %}
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', '{{ site.analytics }}']);
-        _gaq.push(['_trackPageview']);
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      ga('create', 'UA-41135963-1', 'daker.me');
+      ga('send', 'pageview');
     </script>
-{% endif %}
 </head>
 
 <body itemscope itemtype="http://schema.org/CreativeWork">
@@ -68,7 +64,9 @@
     </div>
 
     <footer id="footer">
-        <p class="copyright">{% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}</p>
+        <p class="copyright">
+            {% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}<br />
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
     </footer>
 </body>
 </html>

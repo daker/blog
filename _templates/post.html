@@ -1,19 +1,22 @@
 {% extends 'layout.html' %}
 
+{% set prev = posts[posts.index(post) + 1]|d() %}
+{% set next = posts[:posts.index(post)]|last|d() %}
+
 {% block extrahead %}<title>{{ post.title }} &ndash; {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
-    <meta name="title" content="{{ post.title }}">
-    <meta property="og:image" content="">
-    <meta property="og:title" content="{{ post.title }}">
-    <meta property="og:site_name" content="">
+    <meta name="title" content="{{ post.title }} &ndash; {{ site.title }}">
+    <meta property="og:image" content="{{ get_asset('images/avatar.png') }}">
+    <meta property="og:title" content="{{ post.title }} &ndash; {{ site.title }}">
+    <meta property="og:site_name" content="Adnane Belmadiaf">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@AdnaneBelmadiaf">
-    <meta property="twitter:image" content="">
-    <meta property="twitter:title" content="{{ post.title }}">
-    <meta property="twitter:url" content="">
+    <meta property="twitter:image" content="{{ get_asset('images/avatar.png') }}">
+    <meta property="twitter:title" content="{{ post.title }} &ndash; {{ site.title }}">
+    <meta property="twitter:url" content="http://dake.me{{ get_url(post.url) }}">
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
-    <meta property="og:description" content="">
-    <meta name="twitter:description" content="">{% endblock %}
+    <meta property="og:description" content="{{ post.excerpt }}">
+    <meta name="twitter:description" content="{{ post.excerpt }}">{% endblock %}
 
 {% block published %}
     <div class="post-published-date">
@@ -39,17 +42,31 @@
     <header class="post-header">
         <h1 itemprop="name headline" class="post-title">{{ post.title }}</h1>
     </header>
+    <div class="post-social">
+    </div>
     <div class="post-content">
         <div class="post-field body" itemprop="articleBody">{{ post.content }}</div>
     </div>
+    {% if prev or next %}
+    <div class="prev-next">
+        {% if prev %}
+        <div class="prev-post">
+            <a href="{{ get_url(prev.url) }}" title="{{ prev.title }}" class="title"><span>{{ prev.title }}</span></a>
+        </div>
+        {% endif %}
+        {% if next %}
+        <div class="next-post">
+            <a href="{{ get_url(next.url) }}" title="{{ next.title }}" class="title"><span>{{ next.title }}</span></a>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
 </article>
 <section id="comment">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        var disqus_shortname = ''; // required: replace example with your forum shortname
-        var disqus_identifier = '';
-        var disqus_title = '';
-        var disqus_developer = 0; // or 1 based on if you're looking to skip URL authentication
+        var disqus_shortname = 'daker-blog'; // required: replace example with your forum shortname
+        var disqus_title = '{{ post.title }}';
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

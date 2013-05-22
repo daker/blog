@@ -1,13 +1,12 @@
 base_url: /
-domain:
+domain: daker.me
 author: Adnane Belmadiaf
-description:
+description: Random thoughts on code, life, and future!
 email: daker@ubuntu.com
-title: Adnane Belmadiaf
+title: Adnane Belmadiaf's Blog
 date_format: "%B %d, %Y"
 post_limit: 10
 posts_url: /<year>/<month>/<title>.html
-analytics:
 feed: true
 archives_url: /archives/
 jinja:
