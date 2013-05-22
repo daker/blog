@@ -459,10 +459,9 @@ h1 {
 .post .body>blockquote {
     font-style: italic;
     border-left: 4px solid #e9573f;
-    padding-left: 20px;
-    margin-left: 20px;
-    margin-top: -1px;
+    margin: -1px 25px 20px 15px;
     padding-bottom: 3px;
+    padding-left: 10px;
 }
 
 a.more {
