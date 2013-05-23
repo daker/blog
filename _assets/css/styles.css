@@ -355,6 +355,10 @@ h1 {
     font-weight: 700;
 }
 
+.post-header>.post-title a:hover {
+    text-decoration: none;
+}
+
 .post-author-info a {
     font-family: "Ubuntu",Georgia,Cambria,"Times New Roman",Times,serif;
     font-weight: 400;
