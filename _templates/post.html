@@ -22,7 +22,7 @@
     <div class="post-published-date">
         <strong>Published</strong>
         <p>
-            <time class="post-date">{{ post.date }}</time>
+            <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}" class="post-date">{{ post.timestamp|date('%b %d, %Y at %H:%M') }}</time>
         </p>
     </div>
     {% if post.tags %}
