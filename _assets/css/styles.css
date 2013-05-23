@@ -664,6 +664,21 @@ a.more span {
     margin: 0;
 }
 
+.notfound {
+    margin: 0 auto;
+    display: block;
+    background: url("../images/404.png") top center no-repeat;
+    height: 219px;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin-bottom: 10px;
+}
+
+
+.notfound h3.fourofour {
+    font-size: 60px;
+}
+
 .gist .gist-file .gist-data .line-data {
     font-size: 13px;
 }

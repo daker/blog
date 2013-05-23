@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block extrahead %}<title>Page not found &ndash; {{ site.title }}</title>{% endblock %}
+
+{% block content %}
+    <h1>You 404’d it. Gnarly, dude.</h1>
+
+    <div id="page-404">
+        <div class="notfound">
+            <h3>...otherwise</h3>
+            <h3>known as</h3>
+            <h3 class="fourofour">404</h3>
+        </div>
+        <p>
+        Surfin’ ain’t easy, and right now, you’re lost at sea.
+        But don’t worry; simply pick an option from the list below,
+        and you’ll be back out riding the waves of the Internet in no time.
+        </p>
+        <ul>
+            <li>- Hit the “back” button on your browser. It’s perfect for situations like this!</li>
+            <li>- Head on over to the <a href="/">home page</a>.</li>
+            <li>- Try searching on the <a href="/archives/">archives</a> for the post you were looking for.</li>
+            <li>- Punt.</li>
+        </ul>
+    </div>
+{% endblock %}
