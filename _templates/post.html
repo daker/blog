@@ -22,6 +22,11 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.post-field').readingTime();
+            $(".post-field img").each(function() {
+                if($(this).attr("alt"))
+                    $(this).wrap('<figure class="post-image"></figure>')
+                        .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
+            });
         });
     </script>
     {% endblock %}

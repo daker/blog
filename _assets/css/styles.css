@@ -476,6 +476,18 @@ h1 {
     margin-bottom: 0;
 }
 
+.post .body>p>.post-image>img {
+    margin: 0 auto;
+    display: block;
+}
+
+.post .body>p>.post-image>figcaption {
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    color: #999;
+}
+
 .prev-next {
     border-top: 1px solid #e0e0df;
     overflow: auto;
