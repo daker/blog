@@ -16,7 +16,15 @@
     <meta property="twitter:url" content="http://dake.me{{ get_url(post.url) }}">
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
     <meta property="og:description" content="{{ post.excerpt }}">
-    <meta name="twitter:description" content="{{ post.excerpt }}">{% endblock %}
+    <meta name="twitter:description" content="{{ post.excerpt }}">
+    <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ get_asset('js/jquery.readingTime.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.post-field').readingTime();
+        });
+    </script>
+    {% endblock %}
 
 {% block published %}
     <div class="post-published-date">
