@@ -467,9 +467,13 @@ h1 {
 .post .body>blockquote {
     font-style: italic;
     border-left: 4px solid #e9573f;
-    margin: -1px 25px 20px 15px;
+    margin: 0 25px 20px 0;
     padding-bottom: 3px;
     padding-left: 10px;
+}
+
+.post .body>blockquote>p {
+    margin-bottom: 0;
 }
 
 .prev-next {
