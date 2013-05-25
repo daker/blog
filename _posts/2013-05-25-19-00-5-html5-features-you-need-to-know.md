@@ -29,7 +29,11 @@ Link prefetching allows developers to specify pages or assets they want to silen
 <link rel="prefetch" href="http://daker.me/assets/images/avatar.png" />
 ```
 
-Combined with the pre-rendering feature will make your website even more faster, the browser will fetch and render the entire next page on the background and show it only when the user click on the link :
+Also you can use the [prerendering][0] feature which will make your website even more faster, the browser will fetch and render the entire next page on the background and show it only when the user click on the link :
+
+``` html
+<link rel="prerender" href="http://daker.me/2013/05/hello-world.html" />
+```
 
 <iframe width="780" height="439" src="https://www.youtube.com/embed/_Jn93FDx9oI" frameborder="0" allowfullscreen></iframe>
 
@@ -69,3 +73,5 @@ Datalist element is a litle big addition, no more use of jQuery plugins for auto
 ```
 
 I hope this will help you save time and enhance you coding skills, let me know your thoughts in the comments below.
+
+[0]: https://developers.google.com/chrome/whitepapers/prerender
