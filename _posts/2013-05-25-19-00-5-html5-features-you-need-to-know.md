@@ -43,7 +43,7 @@ The HTML5 download attribute allows developers to force a file to download rathe
 
 ## Regular Expressions
 
-I know you'll fall in love with this feature, no more js or a server side code to check if the user's input is a valid email or url adress, with the pattern attribute you can use regular expressions directly :
+I know you'll fall in love with this feature, no more js <strike>or a server side</strike> code to check if the user's input is a valid email or url adress, with the pattern attribute you can use regular expressions directly :
 
 ``` html
 <input type="email" pattern="[^ @]*@[^ @]*" value="">
