@@ -22,14 +22,14 @@ With the dns-prefetch feature you are allowed to manually control this operation
 
 ## Link Prefetching
 
-Link prefetching allows developers to specify pages or assets they want to silently preload once the page load, like loading the first search resulat :
+Link prefetching allows developers to specify pages or assets they want to silently preload once the page load, like loading the first search results :
 
 ``` html
 <link rel="prefetch" href="http://daker.me/2013/05/hello-world.html" />
 <link rel="prefetch" href="http://daker.me/assets/images/avatar.png" />
 ```
 
-Also you can use the [prerendering][0] feature which will make your website even more faster, the browser will fetch and render the entire next page on the background and show it only when the user click on the link :
+Also you can use the [prerendering][0] feature which will make your website even faster, the browser will fetch and render the entire next page on the background and show it only when the user click on the link :
 
 ``` html
 <link rel="prerender" href="http://daker.me/2013/05/hello-world.html" />
