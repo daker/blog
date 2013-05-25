@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
+div.code {
+    margin-bottom: 20px;
+}
+
 div.code>div {
     overflow: auto;
     background-color: #272727;

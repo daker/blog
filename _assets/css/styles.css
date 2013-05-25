@@ -500,6 +500,11 @@ h1 {
 .post .body>p>.post-image>img {
     margin: 0 auto;
     display: block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .post .body>p>.post-image>figcaption {

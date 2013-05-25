@@ -14,4 +14,4 @@ jinja:
         - jinja2.ext.loopcontrols
 tag_layout: tag.html
 tags_url: /tags/
-pygmentize: false
+pygmentize: true
