@@ -457,7 +457,7 @@ h1 {
 
 .post-social {
     clear: both;
-    overflow: auto;
+    height: 24px;
 }
 
 .post-social-button {
