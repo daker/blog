@@ -78,4 +78,4 @@ You can discuss, upvote this post over at [Hacker News][1] or on [/r/html5][2].
 
 [0]: https://developers.google.com/chrome/whitepapers/prerender
 [1]: https://news.ycombinator.com/item?id=5768174
-[2]: http://www.reddit.com/r/html5
+[2]: http://www.reddit.com/r/html5/comments/1f1sd6/5_html5_features_you_need_to_know/
