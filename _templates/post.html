@@ -3,47 +3,45 @@
 {% set prev = posts[posts.index(post) + 1]|d() %}
 {% set next = posts[:posts.index(post)]|last|d() %}
 
-{% block extrahead %}<title>{{ post.title }} &ndash; {{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="title" content="{{ post.title }} &ndash; {{ site.title }}">
-    <meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
-    <meta property="og:title" content="{{ post.title }} &ndash; {{ site.title }}">
-    <meta property="og:site_name" content="Adnane Belmadiaf">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@AdnaneBelmadiaf">
-    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
-    <meta property="twitter:title" content="{{ post.title }} &ndash; {{ site.title }}">
-    <meta property="twitter:url" content="http://daker.me{{ get_url(post.url) }}">
-    <meta name="twitter:creator" content="@AdnaneBelmadiaf">
-    <meta property="og:description" content="{{ post.excerpt }}">
-    <meta name="twitter:description" content="{{ post.excerpt }}">
-    <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ get_asset('js/main.js') }}"></script>
-    {% endblock %}
+{% block extrahead %}
+<title>{{ post.title }} &ndash; {{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<meta name="title" content="{{ post.title }} &ndash; {{ site.title }}">
+<meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+<meta property="og:title" content="{{ post.title }} &ndash; {{ site.title }}">
+<meta property="og:site_name" content="Adnane Belmadiaf">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@AdnaneBelmadiaf">
+<meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+<meta property="twitter:title" content="{{ post.title }} &ndash; {{ site.title }}">
+<meta property="twitter:url" content="http://daker.me{{ get_url(post.url) }}">
+<meta name="twitter:creator" content="@AdnaneBelmadiaf">
+<meta property="og:description" content="{{ post.excerpt }}">
+<meta name="twitter:description" content="{{ post.excerpt }}">
+<script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/main.js') }}"></script>
+{% endblock %}
 
 {% block published %}
-    <div class="post-published-date">
-        <strong>Published</strong>
-        <p>
-            <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}" class="post-date">{{ post.timestamp|date('%b %d, %Y at %H:%M') }}</time>
-        </p>
-    </div>
+<div class="post-published-date"> <strong>Published</strong>
+    <p>
+        <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}" class="post-date">{{ post.timestamp|date('%b %d, %Y at %H:%M') }}</time>
+    </p>
+</div>
 
-    <div class="post-reading-time">
-        <strong>Reading time</strong>
-        <p id="readingtime">---</p>
-    </div>
-
-    {% if post.tags %}
-    <div class="post-tags">
-        <strong>Tags</strong>
-        <p>
+<div class="post-reading-time"> <strong>Reading time</strong>
+    <p id="readingtime">---</p>
+</div>
+{% if post.tags %}
+<div class="post-tags">
+    <strong>Tags</strong>
+    <p>
         {% for tag in post.tags %}
-            <a href="{{ get_url(tags[tag].url) }}" itemprop="keywords">#{{ tag }}</a>
+        <a href="{{ get_url(tags[tag].url) }}" itemprop="keywords">#{{ tag }}</a>
         {% if not loop.last %}, {% endif %}{% endfor %}
-        </p>
-    </div>
-    {% endif %}
+    </p>
+</div>
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -53,26 +51,21 @@
     </header>
     <div class="post-social">
         <div class="post-social-button">
-            <script src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>
             <fb:like href="http://daker.me{{ get_url(post.url) }}" send="false" show_faces="false"  layout="button_count" width="92" ></fb:like>
         </div>
         <div class="post-social-button">
-            <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://daker.me{{ get_url(post.url) }}" data-count="horizontal" data-text="{{ post.title }}" data-via="AdnaneBelmadiaf" data-related="AdnaneBelmadiaf">Tweet</a>
-            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://daker.me{{ get_url(post.url) }}" data-count="horizontal" data-text="{{ post.title }}" data-via="AdnaneBelmadiaf" data-related="AdnaneBelmadiaf"></a>
         </div>
         <div class="post-social-button">
-            <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" data-url="http://daker.me{{ get_url(post.url) }}" data-via="AdnaneBelmadiaf" data-picture="http://daker.me{{ get_asset('images/avatar.png') }}">Buffer</a>
-            <script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+            <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" data-url="http://daker.me{{ get_url(post.url) }}" data-via="AdnaneBelmadiaf" data-picture="http://daker.me{{ get_asset('images/avatar.png') }}"></a>
         </div>
+        <div class="post-social-button">
+
+        <a href="https://kippt.com/save" class="kippt-save-button" data-url="http://daker.me{{ get_url(post.url) }}" data-title="{{ post.title }}" data-source="daker.me">Save to Kippt</a>
+        </div>
+
         <div class="post-social-button">
             <div class="g-plusone" data-size="medium" data-href="http://daker.me{{ get_url(post.url) }}"></div>
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
         </div>
     </div>
     <div class="post-content">
@@ -82,12 +75,16 @@
     <div class="prev-next">
         {% if prev %}
         <div class="prev-post">
-            <a href="{{ get_url(prev.url) }}" title="{{ prev.title }}" class="title"><span>{{ prev.title }}</span></a>
+            <a href="{{ get_url(prev.url) }}" title="{{ prev.title }}" class="title">
+                <span>{{ prev.title }}</span>
+            </a>
         </div>
         {% endif %}
         {% if next %}
         <div class="next-post">
-            <a href="{{ get_url(next.url) }}" title="{{ next.title }}" class="title"><span>{{ next.title }}</span></a>
+            <a href="{{ get_url(next.url) }}" title="{{ next.title }}" class="title">
+                <span>{{ next.title }}</span>
+            </a>
         </div>
         {% endif %}
     </div>
@@ -105,6 +102,24 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <noscript>
+        Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
 </section>
+{% endblock %}
+
+
+{% block extrafooter %}
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script type="text/javascript">
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+</script>
+<script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://addons.kippt.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","kippt-wjs"));</script>
 {% endblock %}

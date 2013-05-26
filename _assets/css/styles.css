@@ -455,6 +455,7 @@ h1 {
 .post-social {
     clear: both;
     height: 24px;
+    margin-top: 5px;
 }
 
 .post-social-button {
@@ -469,6 +470,10 @@ h1 {
 
 .buffer-button {
     width: 90px !important;
+}
+
+.kippt-save-button {
+    margin-top: 0 !important;
 }
 
 .post .body>ul,
