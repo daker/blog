@@ -387,6 +387,7 @@ h1 {
  }
 
  .post-published-date p,
+ .post-reading-time p,
  .post-author-info p {
      font-family: "Ubuntu",Georgia,Cambria,"Times New Roman",Times,serif;
      font-weight: 400;
@@ -403,7 +404,9 @@ h1 {
     clear: right;
 }
 
-.post-published-date {
+.post-published-date,
+.post-reading-time
+ {
     position: relative;
     padding: 0;
     margin: 0;
@@ -411,7 +414,9 @@ h1 {
     text-align: right;
 }
 
-.post-published-date:before {
+.post-published-date:before,
+.post-reading-time:before,
+.post-tags:before {
     content: '';
     width: 40px;
     height: 1px;
@@ -421,7 +426,9 @@ h1 {
     right: 0;
 }
 
-.post-published-date strong {
+.post-published-date strong,
+.post-reading-time strong
+ {
     font-weight: 700;
     font-size: 14px;
     color: #666665;
@@ -433,16 +440,6 @@ h1 {
     margin: 0;
     padding-top: 10px;
     text-align: right;
-}
-
-.post-tags:before {
-    content: '';
-    width: 40px;
-    height: 1px;
-    background: #dededc;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .post-tags strong {

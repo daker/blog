@@ -18,17 +18,7 @@
     <meta property="og:description" content="{{ post.excerpt }}">
     <meta name="twitter:description" content="{{ post.excerpt }}">
     <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ get_asset('js/jquery.readingTime.js') }}"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.post-field').readingTime();
-            $(".post-field img").each(function() {
-                if($(this).attr("alt"))
-                    $(this).wrap('<figure class="post-image"></figure>')
-                        .after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
-            });
-        });
-    </script>
+    <script type="text/javascript" charset="utf-8" src="{{ get_asset('js/main.js') }}"></script>
     {% endblock %}
 
 {% block published %}
@@ -38,6 +28,12 @@
             <time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}" class="post-date">{{ post.timestamp|date('%b %d, %Y at %H:%M') }}</time>
         </p>
     </div>
+
+    <div class="post-reading-time">
+        <strong>Time to read</strong>
+        <p id="readingtime">---</p>
+    </div>
+
     {% if post.tags %}
     <div class="post-tags">
         <strong>Tags</strong>
