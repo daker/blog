@@ -9,10 +9,10 @@ $(document).ready(function(){
         content = '';
 
     if (seconds > 0) {
-        content = '<span title="'+ words +' word">' + minutes + ' mins and ' + seconds + ' secs</span>';
+        content = '<span title="'+ words +' words">' + minutes + ' mins and ' + seconds + ' secs</span>';
     }
     else {
-        content = '<span title="'+ words +' word">' + minutes+ '</span>';;
+        content = '<span title="'+ words +' words">' + minutes+ '</span>';;
     }
     $('#readingtime').html(content);
 
