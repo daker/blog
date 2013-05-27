@@ -3,24 +3,22 @@
 {% set prev = posts[posts.index(post) + 1]|d() %}
 {% set next = posts[:posts.index(post)]|last|d() %}
 
-{% block extrahead %}
-<title>{{ post.title }} &ndash; {{ site.title }}</title>
-<meta name="description" content="{{ site.description }}">
-<meta name="title" content="{{ post.title }} &ndash; {{ site.title }}">
-<meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
-<meta property="og:title" content="{{ post.title }} &ndash; {{ site.title }}">
-<meta property="og:site_name" content="Adnane Belmadiaf">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@AdnaneBelmadiaf">
-<meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
-<meta property="twitter:title" content="{{ post.title }} &ndash; {{ site.title }}">
-<meta property="twitter:url" content="http://daker.me{{ get_url(post.url) }}">
-<meta name="twitter:creator" content="@AdnaneBelmadiaf">
-<meta property="og:description" content="{{ post.excerpt }}">
-<meta name="twitter:description" content="{{ post.excerpt }}">
-<script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/main.js') }}"></script>
-{% endblock %}
+{% block extrahead %}<title>{{ post.title }} &ndash; {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="title" content="{{ post.title }} &ndash; {{ site.title }}">
+    <meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="og:title" content="{{ post.title }} &ndash; {{ site.title }}">
+    <meta property="og:site_name" content="Adnane Belmadiaf">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AdnaneBelmadiaf">
+    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="twitter:title" content="{{ post.title }} &ndash; {{ site.title }}">
+    <meta property="twitter:url" content="http://daker.me{{ get_url(post.url) }}">
+    <meta name="twitter:creator" content="@AdnaneBelmadiaf">
+    <meta property="og:description" content="{{ post.excerpt }}">
+    <meta name="twitter:description" content="{{ post.excerpt }}">
+    <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ get_asset('js/main.js') }}"></script>{% endblock %}
 
 {% block published %}
 <div class="post-published-date"> <strong>Published</strong>
