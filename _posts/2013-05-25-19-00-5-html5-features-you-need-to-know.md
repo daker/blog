@@ -35,7 +35,7 @@ Also you can use the [prerendering][0] feature which will make your website even
 <link rel="prerender" href="http://daker.me/2013/05/hello-world.html" />
 ```
 
-<iframe width="780" height="439" src="https://www.youtube.com/embed/_Jn93FDx9oI" frameborder="0" allowfullscreen></iframe>
+<iframe width="780" height="439" src="http://www.youtube.com/embed/_Jn93FDx9oI" frameborder="0" allowfullscreen></iframe>
 
 ## Download Attribute
 
