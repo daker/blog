@@ -48,6 +48,17 @@
     .kippt-save-button {
         margin-top: 5px !important;
     }
+    .timeline>li {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .timeline li:before, .timeline li:after {
+        display: none;
+    }
+    #year2013:after {
+        margin-left: -25px;
+    }
 }
 
 
@@ -99,6 +110,18 @@
 
     .kippt-save-button {
         margin-top: 5px !important;
+    }
+
+    .timeline>li {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .timeline li:before, .timeline li:after {
+        display: none;
+    }
+    #year2013:after {
+        margin-left: -25px;
     }
 }
 
@@ -154,5 +177,16 @@
 
     .kippt-save-button {
         margin-top: 5px !important;
+    }
+    .timeline>li {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .timeline li:before, .timeline li:after {
+        display: none;
+    }
+    #year2013:after {
+        margin-left: -25px;
     }
 }
