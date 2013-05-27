@@ -17,11 +17,12 @@
     <link rel="dns-prefetch" href="//p.twitter.com">
     <link rel="dns-prefetch" href="//cdn.api.twitter.com">
     <link rel="dns-prefetch" href="//themes.googleusercontent.com"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="google-site-verification" content="qA5fQYo10u0jB6kurgbIyQI03Yjm5hv99Ll68_c3jYQ" />
     {% if site.author %}<meta name="author" content="{{ site.author }}">
     <link rel="author" href="https://plus.google.com/101694416703170881163" />{% endif %}
     <link rel="stylesheet" href="{{ get_asset('css/styles.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ get_asset('css/mobile.css') }}" type="text/css">
     {% block extrahead %}<title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
@@ -65,7 +66,7 @@
                 <img src="{{ get_asset('images/avatar.png') }}" alt="Avatar">
             </a>
             <div class="post-author-info">
-                <a href="https://twitter.com/AdnaneBelmadiaf/" target="_blank" title="Go to my twitter profil" rel="author" class="post-author-name">Adnane Belmadiaf</a>
+                <span class="post-author-name">Adnane Belmadiaf</span>
                 <p>
                     Front-end developer
                 </p>

@@ -1,0 +1,158 @@
+/* - MOBILE STYLES
+---------------------------------------------- */
+
+/* 4.Tablet landscape / low resolution */
+@media only screen and (min-width: 870px) and (max-width: 1170px){
+    body{font-size: 1.3em;}
+    div#nav{
+        display:block;
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    #container{ width:90%; }
+    #footer { width: 100%;}
+    #sidebar {
+        float:none;
+        width:auto;
+        text-align: center;
+        margin-right: 0;
+    }
+    .posts {
+        float:none;
+        width:auto;
+    }
+    .posts iframe {
+        width: 100%;
+    }
+
+    .post-author-image {
+        text-align: center;
+    }
+
+    .post-reading-time {
+        display: none;
+    }
+
+    .post-published-date {
+        text-align: center;
+    }
+
+    .post-published-date:before {
+        width: 100%;
+    }
+    .post-tags {
+        display: none;
+    }
+    .kippt-save-button {
+        margin-top: 5px !important;
+    }
+}
+
+
+/* 2. Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 570px) and (max-width: 869px){
+
+    body{font-size: 1.3em;}
+    div#nav{
+        display:block;
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    #container{ width:90%; }
+    #footer { width: 100%;}
+    #sidebar {
+        float:none;
+        width:auto;
+        text-align: center;
+        margin-right: 0;
+    }
+    .posts {
+        float:none;
+        width:auto;
+    }
+    .posts iframe {
+        width: 100%;
+    }
+
+    .post-author-image {
+        text-align: center;
+    }
+
+    .post-reading-time {
+        display: none;
+    }
+
+    .post-published-date {
+        text-align: center;
+    }
+
+    .post-published-date:before {
+        width: 100%;
+    }
+    .post-tags {
+        display: none;
+    }
+
+    .kippt-save-button {
+        margin-top: 5px !important;
+    }
+}
+
+
+/* 1. Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 569px){
+    body{font-size: 1em;}
+    div#nav{
+        display:block;
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    #container{ width:90%; }
+    #footer { width: 100%;}
+    #sidebar {
+        float:none;
+        width:auto;
+        text-align: center;
+        margin-right: 0;
+    }
+    .posts {
+        float:none;
+        width:auto;
+    }
+    .posts iframe {
+        width: 100%;
+    }
+
+    .post-author-image {
+        text-align: center;
+    }
+
+    .post-reading-time {
+        display: none;
+    }
+
+    .post-published-date {
+        text-align: center;
+    }
+
+    .post-published-date:before {
+        width: 100%;
+    }
+    .post-tags {
+        display: none;
+    }
+
+    .post .body>p>.post-image>img {
+        max-width: 100%;
+    }
+
+    .kippt-save-button {
+        margin-top: 5px !important;
+    }
+}

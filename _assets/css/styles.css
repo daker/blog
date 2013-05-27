@@ -362,13 +362,17 @@ h1 {
 }
 
 .post-author-info a {
-    font-family: "Ubuntu",Georgia,Cambria,"Times New Roman",Times,serif;
     font-weight: 400;
     color: #e9573f;
 }
 
 .post-author-info a:hover {
     color: #CC675B
+}
+
+.post-author-name {
+    font-weight: 400;
+    color: #e9573f;
 }
 
 .post-author-image {
@@ -379,12 +383,7 @@ h1 {
     text-align: right;
     margin: 0;
     margin-bottom: 10px;
-    float: right;
 }
-
- .post-author-image img {
-     width: 100%;
- }
 
  .post-published-date p,
  .post-reading-time p,
@@ -454,7 +453,7 @@ h1 {
 
 .post-social {
     clear: both;
-    height: 24px;
+    height: 30px;
     margin-top: 5px;
 }
 
@@ -658,6 +657,7 @@ a.more span {
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
+    background: #fff;
 }
 
 .timeline>li:nth-of-type(even){
