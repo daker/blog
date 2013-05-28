@@ -111,6 +111,8 @@ Here are some useful Keyboard shortcuts to remember :
 
 I hope this will help you with your development workflow, let me know your thoughts and what plugins you use in the comments below.
 
+You can discuss, upvote this post over at [Hacker News][10] or on [/r/webdev][11].
+
 [0]: https://github.com/buymeasoda/soda-theme
 [1]: https://github.com/buymeasoda
 [2]: https://gist.github.com/daker/5665850
@@ -121,3 +123,5 @@ I hope this will help you with your development workflow, let me know your thoug
 [7]: http://prefixr.com/
 [8]: https://github.com/titoBouzout/SideBarEnhancements
 [9]: https://github.com/sergeche/emmet-sublime
+[10]: https://news.ycombinator.com/item?id=5783364
+[11]: http://www.reddit.com/r/webdev/comments/1f8anb/5_sublime_text_2_packages_to_enhance_your/
