@@ -506,6 +506,7 @@ h1 {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
+    max-width: 780px;
 }
 
 .post .body>p>.post-image>figcaption {
