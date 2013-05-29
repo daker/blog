@@ -123,5 +123,5 @@ You can discuss, upvote this post over at [Hacker News][10] or on [/r/webdev][11
 [7]: http://prefixr.com/
 [8]: https://github.com/titoBouzout/SideBarEnhancements
 [9]: https://github.com/sergeche/emmet-sublime
-[10]: https://news.ycombinator.com/item?id=5783364
+[10]: https://news.ycombinator.com/item?id=5785243
 [11]: http://www.reddit.com/r/webdev/comments/1f8anb/5_sublime_text_2_packages_to_enhance_your/
