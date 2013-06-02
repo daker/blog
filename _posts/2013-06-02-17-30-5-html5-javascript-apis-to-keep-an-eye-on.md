@@ -174,5 +174,5 @@ Let me know your thoughts in the comments below, also you can discuss, upvote th
 [7]: http://www.w3.org/TR/page-visibility/
 [8]: http://caniuse.com/pagevisibility
 [9]: http://www.gamepadjs.com/
-[10]: #
+[10]: https://news.ycombinator.com/item?id=5809719
 [12]: https://html5-demos.appspot.com/static/html5-therealbleedingedge/template/index.html#27
