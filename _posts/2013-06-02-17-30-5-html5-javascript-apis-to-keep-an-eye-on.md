@@ -34,7 +34,7 @@ if(Battery.isSupported()) {
 ```
 <div class="browser-support">
     <dfn title="firefox"><div>16.0</div></dfn>
-    <dfn title="chrome"><div>10.5</div></dfn>
+    <dfn title="chrome"><div>19</div></dfn>
     <dfn title="opera" class="unsupported"><div>—</div></dfn>
     <dfn title="ie" class="unsupported"><div>—</div></dfn>
     <dfn title="safari" class="unsupported"><div>—</div></dfn>
@@ -74,10 +74,10 @@ window.addEventListener('MozGamepadConnected', onConnected, false);
 Source : [The Edge of HTML5][12]
 
 <div class="browser-support">
-    <dfn title="firefox"><div>10.5</div></dfn>
+    <dfn title="firefox"><div>—</div></dfn>
+    <dfn title="chrome"><div>21</div></dfn>
     <dfn title="opera" class="unsupported"><div>—</div></dfn>
     <dfn title="ie" class="unsupported"><div>—</div></dfn>
-    <dfn title="chrome"><div>10.5</div></dfn>
     <dfn title="safari" class="unsupported"><div>—</div></dfn>
 </div>
 
@@ -105,9 +105,9 @@ if (window.DeviceOrientationEvent) {
 
 <div class="browser-support">
     <dfn title="firefox" class="unsupported"><div>—</div></dfn>
+    <dfn title="chrome"><div>7.0</div></dfn>
     <dfn title="opera"><div>15.0</div></dfn>
     <dfn title="ie" class="unsupported"><div>—</div></dfn>
-    <dfn title="chrome"><div>7.0</div></dfn>
     <dfn title="safari" class="unsupported"><div>—</div></dfn>
 </div>
 
@@ -133,9 +133,9 @@ else {
 
 <div class="browser-support">
     <dfn title="firefox"><div>3.5</div></dfn>
+    <dfn title="chrome"><div>5.0</div></dfn>
     <dfn title="opera"><div>10.6</div></dfn>
     <dfn title="ie"><div>9.0</div></dfn>
-    <dfn title="chrome"><div>5.0</div></dfn>
     <dfn title="safari"><div>5.0</div></dfn>
 </div>
 
@@ -154,9 +154,9 @@ document.addEventListener('visibilitychange', function(e) {
 
 <div class="browser-support">
     <dfn title="firefox"><div>10.0</div></dfn>
+    <dfn title="chrome"><div>14.0</div></dfn>
     <dfn title="opera"><div>12.1</div></dfn>
     <dfn title="ie"><div>10.0</div></dfn>
-    <dfn title="chrome"><div>14.0</div></dfn>
     <dfn title="safari" class="unsupported"><div>—</div></dfn>
 </div>
 
