@@ -104,7 +104,7 @@ if (window.DeviceOrientationEvent) {
 ```
 
 <div class="browser-support">
-    <dfn title="firefox" class="unsupported"><div>—</div></dfn>
+    <dfn title="firefox"><div>3.6</div></dfn>
     <dfn title="chrome"><div>7.0</div></dfn>
     <dfn title="opera"><div>15.0</div></dfn>
     <dfn title="ie" class="unsupported"><div>—</div></dfn>
