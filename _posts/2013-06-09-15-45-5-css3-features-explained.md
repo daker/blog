@@ -114,4 +114,4 @@ Let me know your thoughts in the comments below, also you can discuss, upvote th
 [0]: http://daker.me/2013/06/5-html5-javascript-apis-to-keep-an-eye-on.html
 [1]: https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens
 [2]: http://www.w3.org/TR/CSS2/media.html#media-types
-[3]: #
+[3]: https://news.ycombinator.com/item?id=5849053
