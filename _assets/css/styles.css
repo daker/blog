@@ -799,3 +799,27 @@ a.more span {
  .browser-support > dfn[title="firefox"] {
      background: url("../images/browsers.png") -190px -10px no-repeat
  }
+
+  hr {
+        height: 1px;
+position: relative;
+background-color: #e0e0df;
+border: none;
+clear: both;
+margin: 4.5em auto;
+max-width: 480px;
+overflow: visible;
+width: 100%;
+  }
+
+ hr:after {
+    background: #fff;
+    content: "⌁";
+    font-size: 25px;
+    left: 50%;
+    margin-left: -30px;
+    height: 17px;
+    position: absolute;
+    top: -8px;
+    width: 60px;
+}
