@@ -66,7 +66,7 @@ NB: To see the result you need to try to resize the window of your demo.
 
 ## CSS Filter Effects
 
-Filters are a powerful tool, they can manipulate the appearance of any HTML element and can be stacked together to create unique effects and provide endless of possibilities, such as grayscale, sepia, saturation, opacity, and blurs. We the ```filter``` property let's create hardware-accelerated effects using the GPU.
+Filters are a powerful tool, they can manipulate the appearance of any HTML element and can be stacked together to create unique effects and provide endless of possibilities, such as grayscale, sepia, saturation, opacity, and blurs. The ```filter``` property creates a hardware-accelerated effects using the GPU.
 
 <iframe width="100%" height="300" src="http://jsfiddle.net/daker/qZdmS/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
