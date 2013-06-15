@@ -12,7 +12,7 @@ The CSS3 Flexible Box, better known as Flexbox enables you to create complex lay
 How many time you wanted to vertically center a div ? how many time you wanted to create a 3 columns layout with 2 fluid columns and one fixed ? here is how to do it — with CSS only
 
 ### Vertical centering of a div
-<iframe width="100%" height="300" src="http://jsfiddle.net/daker/NnkHF/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/daker/NnkHF/30/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ### Fixed-Fluid-Fixed Layout
 <iframe width="100%" height="300" src="http://jsfiddle.net/daker/GWZzd/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -72,10 +72,10 @@ Filters are a powerful tool, they can manipulate the appearance of any HTML elem
 
 
 <div class="browser-support">
-    <dfn title="firefox"><div>22.0</div></dfn>
+    <dfn title="firefox" class="unsupported"><div>—</div></dfn>
     <dfn title="chrome"><div>18.0</div></dfn>
     <dfn title="opera"><div>15.0</div></dfn>
-    <dfn title="ie"><div>11.0</div></dfn>
+    <dfn title="ie"  class="unsupported"><div>—</div></dfn>
     <dfn title="safari"><div>6.0</div></dfn>
 </div>
 
