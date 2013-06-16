@@ -3,7 +3,7 @@ layout: post.html
 title: Pocket TV turns any TV into an Android smart TV
 tags: [pocket tv, android]
 ---
-Last Wednesday i got my Pocket TV or PTV from [infinitec][0], a small pocket-sized dongle that connects to the HDMI port of any regular TV and converts it into a powerful Android ISC Smart TV, it can also be controlled by Android mobile devices using the [Google TV Remote][1] app or using there own [remote app][2] which is still in beta.
+Last Wednesday i got my Pocket TV or PTV from [infinitec][0], a small pocket-sized dongle that connects to the HDMI port of any regular TV and converts it into a powerful Android Smart TV, it can also be controlled by Android mobile devices using the [Google TV Remote][1] app or using there own [remote app][2] which is still in beta.
 
 # Features
 * 1 GHz ARM Cortex A9 Processor
