@@ -270,6 +270,7 @@ body {
 h1 {
     font-family: "Ubuntu","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 p {
@@ -339,6 +340,12 @@ h1 {
 
 .post-content {
     margin-top: 15px;
+}
+
+.post-content iframe{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .post-header time {
