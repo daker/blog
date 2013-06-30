@@ -1,0 +1,11 @@
+{
+  "author": "Adnane Belmadiaf",
+  "name": "blog",
+  "version": "0.1",
+  "homepage": "https://daker.me",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-cssmin": "~0.4.1"
+  }
+}

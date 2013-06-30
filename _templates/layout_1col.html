@@ -61,20 +61,7 @@
         {% if site.feed %}<a href="{{ get_url('feed.xml') }}">Feed</a>{% endif %}
     </div>
     <div class="container" id="container">
-        <aside id="sidebar">
-            <a href="https://twitter.com/AdnaneBelmadiaf/" target="_blank" class="post-author-image" title="Go to my twitter profil">
-                <img src="{{ get_asset('images/avatar.png') }}" alt="Avatar">
-            </a>
-            <div class="post-author-info">
-                <span class="post-author-name">Adnane Belmadiaf</span>
-                <p>
-                    Front-end developer
-                </p>
-            </div>
-            {% block published %}{% endblock %}
-        </aside>
-
-        <section class="posts">
+        <section class="work">
             {% block content %}{% endblock %}
         </section>
     </div>
@@ -82,7 +69,7 @@
     <footer id="footer">
         <p class="copyright">
             {% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}<br />
-            This work is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
     </footer>
 
     {% block extrafooter %}{% endblock %}

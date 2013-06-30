@@ -243,7 +243,7 @@ a{
 body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-family: "Ubuntu",Georgia,Cambria,"Times New Roman",Times,serif;
+    font-family: "Ubuntu", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: #555;
     font-size: 18px;
@@ -265,7 +265,6 @@ body {
     text-align: right;
     margin: 30px 40px 0 0;
 }
-
 
 h1 {
     font-family: "Ubuntu","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
@@ -807,19 +806,19 @@ a.more span {
      background: url("../images/browsers.png") -190px -10px no-repeat
  }
 
-  hr {
-        height: 1px;
-position: relative;
-background-color: #e0e0df;
-border: none;
-clear: both;
-margin: 4.5em auto;
-max-width: 480px;
-overflow: visible;
-width: 100%;
-  }
+hr {
+    height: 1px;
+    position: relative;
+    background-color: #e0e0df;
+    border: none;
+    clear: both;
+    margin: 4.5em auto;
+    max-width: 480px;
+    overflow: visible;
+    width: 100%;
+}
 
- hr:after {
+hr:after {
     background: #fff;
     content: "⌁";
     font-size: 25px;
@@ -830,3 +829,55 @@ width: 100%;
     top: -8px;
     width: 60px;
 }
+
+.title {
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.work {
+    overflow: hidden;
+    margin: 0;
+    margin-top: 25px;
+}
+
+ .work li {
+     padding: 3px;
+     background: #fff;
+     margin: 0 10px 30px 0;
+     list-style: none;
+     float: left;
+     width: 229px;
+     border: 1px solid #ddd;
+     -moz-border-radius: 3px;
+     -webkit-border-radius: 3px;
+     border-radius: 3px;
+ }
+
+ .work li:nth-child(4n+4) {
+     margin-right: 0
+ }
+
+ .work li:hover {
+     background: #e9573f;
+     border: 1px solid #e9573f;
+     transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -webkit-transition: all 0.2s;
+     -o-transition: all 0.2s;
+ }
+
+ .work li img {
+     padding: 0;
+     width: 100%;
+     background: #fafafa;
+     border: none;
+     margin: 0;
+     display: block;
+     -moz-border-radius: 2px;
+     -webkit-border-radius: 2px;
+     border-radius: 2px;
+ }
