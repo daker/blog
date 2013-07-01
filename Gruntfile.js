@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       css:{
-        src: ['_assets/css/*.css'],
+        src: ['_assets/css/styles.css', '_assets/css/pygments.css', '_assets/css/mobile.css'],
         dest: '_assets/css/app.min.css'
       }
     },
