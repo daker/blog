@@ -69,7 +69,7 @@ p, pre {
 }
 
 pre, code, kbd, samp {
- font-family: 'Ubuntu Mono'; _font-family: 'Ubuntu Mono'; font-size: 13px;
+ font-family: 'Ubuntu Mono'; font-size: 13px;
 }
 
 pre {
@@ -199,15 +199,7 @@ body {
 }
 
 a:focus {
-    outline: thin dotted
-}
-
-a:hover, a:active {
     outline: 0
-}
-
-h1 {
-    margin: 0
 }
 
 strong {
@@ -345,6 +337,7 @@ h1 {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    border: 0;
 }
 
 .post-header time {
@@ -613,6 +606,11 @@ a.more span {
     padding-left: 20px;
 }
 
+p > code {
+    font-size: 18px;
+    color: #A29A9A
+}
+
 #archive {
     margin: 30px 0 70px 0;
 }
@@ -781,30 +779,31 @@ a.more span {
      width: 100px;
      height: 115px;
      margin-left: 15px;
+     background: url("../images/browsers.png") no-repeat;
  }
 
  .browser-support > dfn[title="opera"] {
-     background: url("../images/browsers.png") -763px -10px no-repeat
+      background-position: -763px -10px;
  }
 
  .browser-support > dfn[title="ie"] {
-     background: url("../images/browsers.png") -38px -13px no-repeat
+     background-position: -38px -13px;
  }
 
  .browser-support > dfn[title="chrome"] {
-     background: url("../images/browsers.png") -335px -10px no-repeat
+     background-position: -335px -10px;
  }
 
- .browser-support > dfn[title="canari"] {
-     background: url("../images/browsers.png") -476px -10px no-repeat
+ .browser-support > dfn[title="canary"] {
+     background-position: -476px -10px;
  }
 
  .browser-support > dfn[title="safari"] {
-     background: url("../images/browsers.png") -615px -10px no-repeat
+     background-position: -615px -10px;
  }
 
  .browser-support > dfn[title="firefox"] {
-     background: url("../images/browsers.png") -190px -10px no-repeat
+     background-position: -190px -10px;
  }
 
 hr {

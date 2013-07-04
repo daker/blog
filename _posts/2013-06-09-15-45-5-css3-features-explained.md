@@ -12,10 +12,10 @@ The CSS3 Flexible Box, better known as Flexbox enables you to create complex lay
 How many time you wanted to vertically center a div ? how many time you wanted to create a 3 columns layout with 2 fluid columns and one fixed ? here is how to do it — with CSS only
 
 ### Vertical centering of a div
-<iframe width="100%" height="300" src="http://jsfiddle.net/daker/NnkHF/30/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/daker/NnkHF/30/embedded/result,css,html" allowfullscreen="allowfullscreen"></iframe>
 
 ### Fixed-Fluid-Fixed Layout
-<iframe width="100%" height="300" src="http://jsfiddle.net/daker/GWZzd/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/daker/GWZzd/embedded/result,css,html" allowfullscreen="allowfullscreen"></iframe>
 
 As you can see this will allow you to make other layouts(Fluid-Fluid-Fixed, Fluid-Fixed-Fixed, etc...), easy no ?
 

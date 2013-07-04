@@ -12,7 +12,7 @@ $(document).ready(function(){
         content = '<span title="'+ words +' words">' + minutes + ' mins and ' + seconds + ' secs</span>';
     }
     else {
-        content = '<span title="'+ words +' words">' + minutes+ '</span>';;
+        content = '<span title="'+ words +' words">' + minutes+ ' minute</span>';
     }
     $('#readingtime').html(content);
 
