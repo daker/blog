@@ -26,7 +26,7 @@ the width of the rendred box will be calculated like this :
 
 ```300px (width) + 20px (left + right padding) + 10px (left + right border) + 20px (left + right margin) = 350px```
 
-which will give us a box with 350px width, so it case you have to change the width of the box to 270px width, this is where the box-sizing property comes to the rescue.
+which will give us a box with 350px width, so in this case you have to change the width of the box to 270px, and this is where the box-sizing property comes to the rescue.
 
 ```box-sizing``` allows you to switch box models :
 
