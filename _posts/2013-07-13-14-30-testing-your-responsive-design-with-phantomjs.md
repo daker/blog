@@ -29,7 +29,7 @@ $ npm install -g phantomjs
 Now you should now have PhantomJS installed, you check that by running :
 ```$ phantomjs --version```
 
-PhantomJS is very powerfull tool, you can manipulate page, access page settings(prevent loading images, prevent running Javascript), accessing the filesystem, running Javascript and you can capture webpage, it can be coupled with other testing framework(like QUnitJS)
+PhantomJS is very powerfull tool, it lets you manipulate pages, access page settings(prevent loading images, prevent running Javascript), accessing the filesystem, running Javascript and you can capture webpage, it can be coupled with other testing frameworks(like QUnitJS)
 
 ## Testing your responsive design
 PhantomJS can capture the content of any webpage in PNG, JPEG, GIF or PDF file, it let's you set the viewport size, the zoom factor, the user-agent and more usefull stuff.
