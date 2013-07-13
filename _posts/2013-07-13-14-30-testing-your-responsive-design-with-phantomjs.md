@@ -73,4 +73,6 @@ async.eachSeries(sizes, capture, function (e) {
 
 I have coupled PhantomJS with [async.js][0] so i can take multiple screenshots, now all you need to do is to run ```phantomjs capture.js``` from the commandline, the good part is that PhantomJS will capture all the page not only the viewport.
 
-[0] https://github.com/caolan/async
+![Responsive Design Screenshots](/assets/posts/phantomjs-demo.png)
+
+[0]: https://github.com/caolan/async
