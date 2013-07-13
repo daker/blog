@@ -195,7 +195,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 a:focus {
@@ -237,6 +237,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: "Ubuntu", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     font-weight: 400;
+    background: #fff;
     color: #555;
     font-size: 18px;
     line-height: 1.4;
@@ -337,6 +338,12 @@ h1 {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    border: 0;
+}
+
+.post-content img{
+    display: block;
+    margin: 0 auto;
     border: 0;
 }
 
