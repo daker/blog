@@ -75,7 +75,7 @@ I have coupled PhantomJS with [async.js][0] so i can take multiple screenshots, 
 
 ![Responsive Design Screenshots](/assets/posts/phantomjs-demo.png)
 
-**UPDATE 14/07/2013** : The script also works with [SlimerJS][1] similar to PhantomJs, except that it runs Gecko, the browser engine of Mozilla Firefox, instead of Webkit.
+**UPDATE 14/07/2013** : The script also works with [SlimerJS][1], SlimerJS similar to PhantomJs, except that it runs Gecko, the browser engine of Mozilla Firefox, instead of Webkit.
 
 <blockquote class="twitter-tweet"><p>Testing your <a href="https://twitter.com/search?q=%23responsivedesign&amp;src=hash">#responsivedesign</a>? Take this script for PhantomJS and run it with SlimerJS <a href="http://t.co/wyqiIJustE">http://t.co/wyqiIJustE</a> by <a href="https://twitter.com/AdnaneBelmadiaf">@AdnaneBelmadiaf</a></p>&mdash; SlimerJS (@slimerjs) <a href="https://twitter.com/slimerjs/statuses/356172141277888513">July 13, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
