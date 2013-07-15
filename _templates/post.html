@@ -73,6 +73,22 @@
     <div class="post-content">
         <div class="post-field body" itemprop="articleBody">{{ post.content }}</div>
     </div>
+
+    <form action="http://daker.us7.list-manage.com/subscribe/post?u=ebd280d4e0da7cce97bd7a8ad&amp;id=327b2cec50" method="post" id="signup" name="signup-form">
+        <h2>Join the Mailing List</h2>
+
+        <div class="row">Just ONE e-mail each Wednesday. Easy unsubscribe. No spam — your e-mail address will be safe.</div>
+        <div class="row">
+            <input type="email" name="EMAIL" id="email" required="required" placeholder="Your E-mail address will be safe.">
+            <input type="submit" value="Subscribe" name="subscribe" id="subscribe-btn"> or Subscribe to the <a href="{{ get_url('feed.xml') }}" title="Subscribe to the RSS feed">RSS feed</a> instead.
+        </div>
+
+        <div id="response" style="display:none"></div>
+
+        <div class="row">Powered by <a href="http://eepurl.com/Ci5NL" title="MailChimp - email marketing made easy and fun">MailChimp</a></div>
+
+    </form>
+
     {% if prev or next %}
     <div class="prev-next">
         {% if prev %}
