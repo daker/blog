@@ -30,10 +30,10 @@ $(document).ready(function () {
             url: 'http://daker.us7.list-manage.com/subscribe/post-json?u=ebd280d4e0da7cce97bd7a8ad&amp;id=327b2cec50',
             data: $(this).serialize(),
             type: 'GET',
-            dataType: 'json',
+            dataType: 'jsonp',
             contentType: "application/json; charset=utf-8",
             error: function (err) {
-                $('#response').html('<span style="color:#cc181e;">Could not connect to the registration server.</span>span">');
+                $('#response').html('<span style="color:#cc181e;">Could not connect to the registration server.</span>');
                 $('#response').fadeIn();
             },
             success: function (data) {
