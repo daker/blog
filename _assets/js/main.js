@@ -31,7 +31,6 @@ $(document).ready(function () {
             data: $(this).serialize(),
             type: 'GET',
             dataType: 'jsonp',
-            contentType: "application/json; charset=utf-8",
             error: function (err) {
                 $('#response').html('<span style="color:#cc181e;">Could not connect to the registration server.</span>');
                 $('#response').fadeIn();
