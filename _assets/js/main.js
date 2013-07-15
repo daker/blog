@@ -27,20 +27,22 @@ $(document).ready(function () {
 
         // Prepare query string and send AJAX request
         $.ajax({
-            url: 'http://daker.us7.list-manage.com/subscribe/post-json?u=ebd280d4e0da7cce97bd7a8ad&amp;id=327b2cec50',
+            url: 'http://daker.us7.list-manage.com/subscribe/post-json?u=ebd280d4e0da7cce97bd7a8ad&id=327b2cec50&c=?',
             data: $(this).serialize(),
             type: 'GET',
             dataType: 'json',
+            contentType: "application/json; charset=utf-8",
             error: function (err) {
                 $('#response').html('<span style="color:#cc181e;">Could not connect to the registration server.</span>');
                 $('#response').fadeIn();
             },
             success: function (data) {
                 if (data.result != "success") {
-                    $('#response').html('We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you (it may take a minute or two).');
+                    $('#response').html('<span style="color:#cc181e;">' + data.msg + '</span>');
                     $('#response').fadeIn();
                 } else {
-                    // It worked, so hide form and display thank-you message.
+                    $('#response').html('Almost finished... We need to confirm your email address.<br />To complete the subscription process, please click the link in the email we just sent you.');
+                    $('#response').fadeIn();
                 }
             }
         });
