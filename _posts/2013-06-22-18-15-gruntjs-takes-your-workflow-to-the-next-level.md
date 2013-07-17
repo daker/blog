@@ -22,7 +22,7 @@ $ sudo npm install grunt --save-dev
 
 ```sh
 $ brew install node
-$ curl http://npmjs.org/install.sh | sh
+$ curl https://npmjs.org/install.sh | sh
 $ npm install -g grunt-cli
 $ npm install grunt --save-dev
 ```

@@ -22,7 +22,7 @@ $ sudo npm install -g phantomjs
 
 ```sh
 $ brew install node
-$ curl http://npmjs.org/install.sh | sh
+$ curl https://npmjs.org/install.sh | sh
 $ npm install -g phantomjs
 ```
 
