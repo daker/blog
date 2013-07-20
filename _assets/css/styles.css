@@ -4,184 +4,231 @@
   font-weight: 400;
   src: local('Ubuntu'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
  display: block
 }
 
 audio, canvas, video {
- display: inline-block; *display: inline; *zoom: 1;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 
 audio:not([controls]) {
- display: none
+    display: none
 }
 
 [hidden] {
- display: none
+    display: none
 }
 
 html {
- font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 button, input, select, textarea {
- font-family: sans-serif
+    font-family: sans-serif
 }
 
 body {
- margin: 0
+    margin: 0
 }
 
 a:focus {
- outline: thin dotted
+    outline: thin dotted
 }
 
 a:hover, a:active {
- outline: 0
+    outline: 0
 }
 
 h1, h2, h3, h4, h5, h6 {
- margin: 0
+    margin: 0
 }
 
 abbr[title] {
- border-bottom: 1px dotted
+    border-bottom: 1px dotted
 }
 
 b, strong {
- font-weight: bold
+    font-weight: bold
 }
 
 blockquote {
- margin: 0
+    margin: 0
 }
 
 dfn {
- font-style: italic
+    font-style: italic
 }
 
 mark {
- background: #ff0; color: #000;
+    background: #ff0;
+    color: #000;
 }
 
 p, pre {
- margin: 0
+    margin: 0
 }
 
 pre, code, kbd, samp {
- font-family: 'Ubuntu Mono'; font-size: 13px;
+    font-family: 'Ubuntu Mono';
+    font-size: 13px;
 }
 
 pre {
- white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 q {
- quotes: none
+    quotes: none
 }
 
 q:before, q:after {
- content: ''; content: none;
+    content: '';
+    content: none;
 }
 
 small {
- font-size: 75%
+    font-size: 75%
 }
 
 sub, sup {
- font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sup {
- top: -0.5em
+    top: -0.5em
 }
 
 sub {
- bottom: -0.25em
+    bottom: -0.25em
 }
 
 dl, menu, ol, ul {
- margin: 0
+    margin: 0
 }
 
 dd {
- margin: 0
+    margin: 0
 }
 
 menu, ol, ul {
- padding: 0; list-style: none; list-style-image: none;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
 }
 
 img {
- -ms-interpolation-mode: bicubic
+    -ms-interpolation-mode: bicubic
 }
 
 a img {
- border: 0
+    border: 0
 }
 
 svg:not(:root) {
- overflow: hidden
+    overflow: hidden
 }
 
 figure {
- margin: 0
+    margin: 0
 }
 
 figcaption {
- -webkit-nbsp-mode: normal
+    -webkit-nbsp-mode: normal
 }
 
 form {
- margin: 0
+    margin: 0
 }
 
 fieldset {
- border: 1px solid #c0c0c0; margin: 0 2px; padding: .35em .625em .75em;
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
 }
 
 legend {
- border: 0; padding: 0; white-space: normal; *margin-left: -7px;
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px;
 }
 
 button, input, select, textarea {
- font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
 }
 
 button, input {
- line-height: normal
+    line-height: normal
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
- cursor: pointer; -webkit-appearance: button; *overflow: visible;
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible;
 }
 
 button[disabled], input[disabled] {
- cursor: default
+    cursor: default
 }
 
 input[type="checkbox"], input[type="radio"] {
- -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; *height: 13px; *width: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
 }
 
 input[type="search"] {
- -webkit-appearance: textfield; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
- -webkit-appearance: none
+    -webkit-appearance: none
 }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
- border: 0; padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 textarea {
- overflow: auto; vertical-align: top;
+    overflow: auto;
+    vertical-align: top;
 }
 
 table {
- border-collapse: collapse; border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -260,30 +307,52 @@ body {
 }
 
 h1 {
-    font-family: "Ubuntu","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: -1px;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18px;
 }
 
 p {
     margin-bottom: 24px
 }
 
-::-webkit-scrollbar{margin-right:5px;background-color:#eee;width:10px;}
-::-webkit-scrollbar-track{-webit-box-shadow:0 0 2px #ccc;box-shadow:0 0 2px #ccc;}
-::-webkit-scrollbar-thumb{
-    border:1px #eee solid;
-    background:#777;
-    -webit-box-shadow:0 0 8px #555 inset;
-    box-shadow:0 0 8px #555 inset;
-    -webit-transition:all .3s ease-out;
-    transition:all .3s ease-out;
+::-webkit-scrollbar {
+    margin-right: 5px;
+    background-color: #eee;
+    width: 10px;
 }
-::-webkit-scrollbar-thumb:window-inactive{
-    background:#bbb;box-shadow:0 0 8px #999 inset;
+
+::-webkit-scrollbar-track {
+    -webit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
 }
-::-webkit-scrollbar-thumb:hover{background:#999}
+
+::-webkit-scrollbar-thumb {
+    border: 1px #eee solid;
+    background: #777;
+    -webit-box-shadow: 0 0 8px #555 inset;
+    box-shadow: 0 0 8px #555 inset;
+    -webit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #bbb;
+    box-shadow: 0 0 8px #999 inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
 
 ::-moz-selection {
     color: #fff;
@@ -842,6 +911,14 @@ hr:after {
     text-align: center;
 }
 
+.subtitle {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .work {
     overflow: hidden;
     margin: 0;
@@ -949,4 +1026,228 @@ input[type="submit"]:active {
 #response {
     font-size: 12px;
     color: #16a765;
+}
+
+.demo {
+    background: #2d3538;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    width: 250px;
+    height: 300px;
+    margin: 0 2% 2% 0;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.demo:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.demo img {
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    float: left;
+}
+.demo .inner-content {
+    background: #2d3538;
+    padding: 20px 15px 0 15px;
+    position: relative;
+    z-index: 5;
+    clear: both;
+}
+.demo .inner-content h4 {    height: 21px }
+.demo .inner-content h4 a {
+    color: #fff;
+    font-family: Gotham, "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.demo .inner-content h4 a:hover {
+    color: #77cc6d;
+    text-decoration: none;
+}
+.demo .inner-content p {
+    font-family: "proxima-nova", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #838383;
+    font-size: 12px;
+    line-height: 18px;
+    height: 60px;
+}
+.demo .inner-content .full-desc {
+    margin: -60px 15px 0 0;
+    position: absolute;
+    display: none;
+}
+.b:hover .overlay {
+    display: block!important;
+    opacity: 1;
+}
+.demo .overlay {
+    text-align: center;
+    background: rgba(0, 222, 255, .25);
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    width: 250px;
+    height: 141px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.demo .overlay .button-launch {
+    margin: 42px 3px 0 0;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    padding: 0 10px;
+}
+.demo .overlay .button-demo {
+    background: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 10px;
+}
+
+.resume p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resume h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resume h2 {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.resume h3 {
+    margin-bottom: 5px;
+}
+
+.resume ul {
+    list-style-type: disc;
+    margin: 15px 0 15px 40px;
+}
+
+.resume em {
+    color: #aaa;
+}
+
+.social {
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: #555;
+    padding-right: 10px;
+    font-size: 30px;
+    line-height: 1.5;
+    -webkit-transition: color 200ms ease-in;
+    -moz-transition: color 200ms ease-in;
+    -o-transition: color 200ms ease-in;
+    transition: color 200ms ease-in;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-tux,
+.icon-github,
+.icon-home,
+.icon-google-plus,
+.icon-facebook,
+.icon-twitter,
+.icon-feed {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-tux:before {
+    content: "\21";
+}
+
+.icon-tux:hover {
+    color: #000
+}
+
+.icon-github:before {
+    content: "\22";
+}
+
+.icon-github:hover {
+    color: #4183c4;
+}
+
+.icon-home:before {
+    content: "\23";
+}
+
+.icon-google-plus:before {
+    content: "\24";
+}
+
+.icon-google-plus:hover {
+    color: #cc3b2b;
+}
+
+.icon-facebook:before {
+    content: "\25";
+}
+
+.icon-twitter:before {
+    content: "\26";
+}
+
+.icon-twitter:hover {
+    color: #1dcaff;
+}
+
+.icon-feed:before {
+    content: "\27";
+}
+
+.icon-feed:hover {
+    color: #ff9900;
 }

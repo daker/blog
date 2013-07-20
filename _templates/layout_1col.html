@@ -61,9 +61,7 @@
         {% if site.feed %}<a href="{{ get_url('feed.xml') }}">Feed</a>{% endif %}
     </div>
     <div class="container" id="container">
-        <section class="work">
-            {% block content %}{% endblock %}
-        </section>
+        {% block content %}{% endblock %}
     </div>
 
     <footer id="footer">
