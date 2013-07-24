@@ -230,7 +230,7 @@ body {
 
 # Conclusion
 
-Stylus is certainly worth a try, and if you are a Compass guy, Stylus has an extension called [nib][0] that provides robust cross-browser CSS3 mixins. Sure there is more you can learn about Stylus and there is [docs] for that.
+Stylus is certainly worth a try, and if you are a Compass guy, Stylus has an extension called [nib][0] that provides robust cross-browser CSS3 mixins. Sure there is more you can learn about Stylus and there is [docs][1] for that.
 
 [0]: https://github.com/visionmedia/nib
 [1]: http://learnboost.github.io/stylus/
