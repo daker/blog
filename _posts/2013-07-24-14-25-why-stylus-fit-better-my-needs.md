@@ -3,7 +3,7 @@ layout: post.html
 title: Why Stylus fit better my needs
 tags: [stylus, nodejs]
 ---
-Stylus is an expressive, dynamic, robust CSS pre-processor built on top of Node.js. LESS and SASS are both great, they try to stay as close as the original CSS syntax as possible to minimize the impact of having to learn a new language, but for me someone who cares about simplicity and readability, the syntax becomes an important part of the language or the framework.S
+Stylus is an expressive, dynamic, robust CSS pre-processor built on top of Node.js. LESS and SASS are both great, they try to stay as close as the original CSS syntax as possible to minimize the impact of having to learn a new language, but for me someone who cares about simplicity and readability, the syntax becomes an important part of the language or the framework.
 
 ![PhantomJS](/assets/posts/stylus.png)
 
