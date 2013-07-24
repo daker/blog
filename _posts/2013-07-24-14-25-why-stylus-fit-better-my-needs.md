@@ -88,6 +88,8 @@ border-radius(n)
     background #e9573f
 ```
 
+The compiled version will be
+
 ```css
 #btn {
     -webkit-border-radius: 3px;

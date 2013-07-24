@@ -254,7 +254,8 @@ strong {
 }
 
 p {
-    margin: 0
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 img {
@@ -319,10 +320,6 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 18px;
-}
-
-p {
-    margin-bottom: 24px
 }
 
 ::-webkit-scrollbar {
@@ -400,17 +397,22 @@ p {
     margin-top: 15px;
 }
 
-.post-content iframe{
+.post-content iframe {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
     border: 0;
 }
 
-.post-content img{
+.post-content img {
     display: block;
     margin: 0 auto;
     border: 0;
+}
+
+.post-content h1,
+.post-content h2 {
+    margin-bottom: 10px;
 }
 
 .post-header time {
@@ -978,22 +980,35 @@ hr:after {
 }
 
 #signup {
-    border: 1px solid #e0e0df;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     padding: 10px;
     margin-bottom: 10px;
+    background: #33383D;
+    color: #FFF;
 }
 
 div.row {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 12px;
+    float: left;
+    margin-right: 10px;
+    text-align: justify;
 }
 
 div.row input{
     display: inline-block;
+}
+
+div.powerby {
+    font-size: 12px;
+    color: #fff;
+}
+
+div.powerby a {
+    color: #82b964
 }
 
 input[type="email"] {
@@ -1005,7 +1020,6 @@ input[type="submit"] {
     display: block;
     text-decoration: none;
     color: #fff;
-    margin-top: 10px;
     background-color: #e9573f;
     border: 0;
     -webkit-border-radius: 3px;
@@ -1013,7 +1027,7 @@ input[type="submit"] {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    width: 180px;
+    width: 139px;
     text-transform: uppercase;
 }
 
