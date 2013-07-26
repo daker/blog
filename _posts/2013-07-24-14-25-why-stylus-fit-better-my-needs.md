@@ -48,7 +48,7 @@ which produce the following CSS code
 
 # Variables
 
-Defining variables is simple, you don't need to use $ or @ like in SASS or LESS, the good part is that Stylus also support the $ so if you are coming from Sass your variables will remain functionnal.
+Defining variables is simple, you don't need to use $ or @ like in SASS or LESS, the good part is that Stylus also support the $ so if you are coming from SASS your variables will remain functionnal.
 
 ```css
 font-size = 14px
