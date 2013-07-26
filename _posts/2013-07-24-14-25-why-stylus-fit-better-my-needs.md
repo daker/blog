@@ -147,7 +147,7 @@ Stylus provides a good inheritance mecanism
     border 1px solid #eee
 
 .warning
-    @extend .message
+    @extend .notice
     color #e2e21e
 ```
 
