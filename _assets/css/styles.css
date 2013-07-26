@@ -295,7 +295,7 @@ body {
 #container {
     width: 980px;
     margin: auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #sidebar {
@@ -1268,6 +1268,6 @@ input[type="submit"]:active {
 }
 
 #indiegogo {
-    position: absolute;
-    left: 105px;
+    position: relative;
+    left: -60px;
 }
