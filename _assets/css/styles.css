@@ -664,7 +664,8 @@ a.more {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    width: 180px;
+    min-width: 180px;
+    max-width: 220px;
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -1264,4 +1265,9 @@ input[type="submit"]:active {
 
 .icon-feed:hover {
     color: #ff9900;
+}
+
+#indiegogo {
+    position: absolute;
+    left: 105px;
 }
