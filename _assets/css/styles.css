@@ -435,15 +435,6 @@ h3 {
     text-decoration: none;
 }
 
-.post-author-info a {
-    font-weight: 400;
-    color: #e9573f;
-}
-
-.post-author-info a:hover {
-    color: #CC675B
-}
-
 .post-author-name {
     font-weight: 400;
     color: #e9573f;
@@ -475,6 +466,26 @@ h3 {
     margin: 0;
     padding: 0;
     clear: right;
+}
+
+.post-author-info p {
+    margin-bottom: 0;
+}
+
+.post-author-icons {
+    margin-bottom: 10px;
+}
+
+.post-author-icons a {
+    text-decoration: none;
+    color: #555;
+    padding-right: 3px;
+    font-size: 25px;
+    line-height: 1.5;
+    -webkit-transition: color 200ms ease-in;
+    -moz-transition: color 200ms ease-in;
+    -o-transition: color 200ms ease-in;
+    transition: color 200ms ease-in;
 }
 
 .post-published-date,
