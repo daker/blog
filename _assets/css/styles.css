@@ -1270,4 +1270,7 @@ input[type="submit"]:active {
 #indiegogo {
     position: relative;
     left: -60px;
+    width: 224px;
+    height: 486px;
+    border: 0;
 }
