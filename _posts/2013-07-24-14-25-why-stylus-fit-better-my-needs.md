@@ -3,7 +3,7 @@ layout: post.html
 title: Why Stylus fit better my needs
 tags: [stylus, nodejs]
 ---
-Stylus is an expressive, dynamic, robust CSS pre-processor built on top of Node.js. LESS and SASS are both great, they try to stay as close as the original CSS syntax as possible to minimize the impact of having to learn a new language, but for me someone who cares about simplicity and readability, the syntax becomes an important part of the language or the framework.
+Stylus is an expressive, dynamic, robust CSS pre-processor built on top of Node.js. LESS and Sass are both great, they try to stay as close as the original CSS syntax as possible to minimize the impact of having to learn a new language, but for me someone who cares about simplicity and readability, the syntax becomes an important part of the language or the framework.
 
 ![PhantomJS](/assets/posts/stylus.png)
 
@@ -48,7 +48,7 @@ which produce the following CSS code
 
 # Variables
 
-Defining variables is simple, you don't need to use $ or @ like in SASS or LESS, the good part is that Stylus also support the $ so if you are coming from SASS your variables will remain functionnal.
+Defining variables is simple, you don't need to use $ or @ like in Sass or LESS, the good part is that Stylus also support the $ so if you are coming from Sass your variables will remain functionnal.
 
 ```css
 font-size = 14px
