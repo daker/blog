@@ -26,8 +26,7 @@ $ curl https://npmjs.org/install.sh | sh
 $ npm install -g phantomjs
 ```
 
-Now you should now have PhantomJS installed, you check that by running :
-```$ phantomjs --version```
+Now you should now have PhantomJS installed, you check that by running : ```$ phantomjs --version```
 
 PhantomJS is very powerfull tool, it lets you manipulate pages, access page settings(prevent loading images, prevent running Javascript), accessing the filesystem, running Javascript and you can capture webpage, it can be coupled with other testing frameworks(like QUnitJS)
 
