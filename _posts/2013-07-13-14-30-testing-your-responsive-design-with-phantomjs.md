@@ -4,7 +4,7 @@ title: Testing your responsive design with PhantomJS
 tags: [nodejs, phantomjs]
 ---
 
-User testing is an important aspect of the development process of any project, headless browsers can be great for automating and testing web pages programmatically, PhantomJS is a headless WebKit with JavaScript API, which mean that the rendered web pages are never actually displayed, just because PhantomJS is a browser but without a GUI.
+User testing is an important aspect of the development process of any web project, that's why headless browsers can be great for automating and testing web pages programmatically, PhantomJS is one of many headless browsers basicaly a WebKit browser with JavaScript API, which means that the rendered web pages are never actually displayed, just because it is a browser but without a GUI.
 
 ![PhantomJS](/assets/posts/phantomjs.png)
 
