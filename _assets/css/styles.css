@@ -271,14 +271,15 @@ html, body {
 }
 
 a{
-        color:#e9573f;
-        font-weight:400;
-        text-decoration:none;
-    }
-    a:hover{
-        color:#d44a34;
-        text-decoration:underline;
-    }
+    color: #e9573f;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d44a34;
+    text-decoration: underline;
+}
 
 body {
     text-rendering: optimizeLegibility;
@@ -363,19 +364,41 @@ h3 {
     background: #CC675B;
 }
 
+#header {
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+#searchForm {
+    width: 300px;
+    float: left;
+    margin-top: 5px;
+}
+
+#searchForm input[type="search"] {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    color: #ccc;
+    padding: 6px;
+}
+
 #nav {
     text-transform: uppercase;
     word-spacing: 4px;
     text-align: right;
-    width: 980px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 300px;
+    float: right;
+    margin-top: 10px;
 }
 
 #nav a {
     text-decoration: none;
     color: #333;
-    padding-top: 3px;
     padding-left: 5px;
     font-size: 15px;
 }
@@ -538,7 +561,7 @@ h3 {
 
 .post-social {
     clear: both;
-    height: 30px;
+    overflow: hidden;
     margin-top: 5px;
 }
 
@@ -558,6 +581,10 @@ h3 {
 
 .kippt-save-button {
     margin-top: 0 !important;
+}
+
+.FlattrButton {
+    max-width: 110px !important;
 }
 
 .post .body>ul,
@@ -662,7 +689,6 @@ h3 {
 
 
 a.more {
-    font-weight: bold;
     display: block;
     padding: 5px;
     text-decoration: none;
@@ -675,9 +701,9 @@ a.more {
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    min-width: 180px;
+    min-width: 170px;
     max-width: 220px;
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -696,6 +722,10 @@ a.more span {
 p > code {
     font-size: 18px;
     color: #A29A9A
+}
+
+.post-field > .code {
+    margin-bottom: 10px;
 }
 
 #archive {
@@ -1001,7 +1031,7 @@ hr:after {
     color: #FFF;
 }
 
-div.row {
+.row {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 12px;
@@ -1010,16 +1040,16 @@ div.row {
     text-align: justify;
 }
 
-div.row input{
+.row input{
     display: inline-block;
 }
 
-div.powerby {
+.powerby {
     font-size: 12px;
     color: #fff;
 }
 
-div.powerby a {
+.powerby a {
     color: #82b964
 }
 
@@ -1201,7 +1231,6 @@ input[type="submit"]:active {
     transition: color 200ms ease-in;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
     font-family: 'icomoon';
     content: attr(data-icon);
@@ -1219,7 +1248,9 @@ input[type="submit"]:active {
 .icon-google-plus,
 .icon-facebook,
 .icon-twitter,
-.icon-feed {
+.icon-feed,
+.icon-search,
+.icon-cancel {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -1276,6 +1307,14 @@ input[type="submit"]:active {
 
 .icon-feed:hover {
     color: #ff9900;
+}
+
+.icon-search:before {
+    content: "\29";
+}
+
+.icon-cancel:before {
+    content: "\28";
 }
 
 #indiegogo {

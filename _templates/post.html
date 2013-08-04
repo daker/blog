@@ -18,8 +18,6 @@
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
     <meta property="og:description" content="{{ post.excerpt|striptags|safe }}">
     <meta name="twitter:description" content="{{ post.excerpt|striptags|safe }}">
-    <script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ get_asset('js/main.js') }}"></script>
     {% if prev %}<link rel="prev" title="{{ prev.title }}" href="http://daker.me{{ get_url(prev.url) }}" />{% endif %}
     {% if next %}<link rel="next" title="{{ next.title }}" href="http://daker.me{{ get_url(next.url) }}" />{% endif %}{% endblock %}
 

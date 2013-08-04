@@ -6,7 +6,21 @@ $(document).ready(function () {
         time = (words / wpm) * 60,
         minutes = Math.floor(time / 60),
         seconds = Math.floor(time - minutes * 60),
-        content = '';
+        content,
+        posts,
+        monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ],
+        exp,
+        title,
+        summary,
+        link,
+        pubDate,
+        day,
+        month,
+        year,
+        date,
+        wrapper;
 
     if (seconds > 0) {
         content = '<span title="' + words + ' words">' + minutes + ' mins and ' + seconds + ' secs</span>';
@@ -19,6 +33,19 @@ $(document).ready(function () {
         if ($(this).attr("alt"))
             $(this).wrap('<figure class="post-image"></figure>')
                 .after('<figcaption>' + $(this).attr("alt") + '</figcaption>');
+    });
+
+
+    $.ajax({
+        url: '/feed.xml',
+        dataType: 'xml',
+        type: 'GET',
+        success: function (xml) {
+            posts = xml;
+        },
+        error: function () {
+            console.log("I am sorry, But I can't fetch the RSS feed");
+        }
     });
 
     $('#signup').submit(function () {
@@ -49,4 +76,59 @@ $(document).ready(function () {
 
         return false;
     });
+
+    $(window).hashchange(function () {
+        var keyword = location.hash.replace(/^#/, '');
+        $(".posts").empty();
+
+        $(posts).find('entry').each(function () {
+            title = $(this).find("title").text();
+            content = $(this).find("content").text();
+            exp = new RegExp(keyword, "gi");
+
+            if (title.match(exp) || content.match(exp)) {
+                summary = $(this).find("summary").text();
+                link = $(this).find("link").attr('href');
+                pubDate = new Date($(this).find("updated").text());
+                day = pubDate.getDate();
+                month = monthNames[pubDate.getMonth()];
+                year = pubDate.getFullYear();
+                date = month + ' ' + day + ', ' + year;
+                link = '<header class="post-header"><h1 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h1><time datetime="' + pubDate + '">' + date + '</time></header>';
+                content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + '</div></div></div>';
+                wrapper = '<article class="post" itemscope itemtype="http://schema.org/BlogPosting">' + link + content + '</article>';
+                $(".posts").append($(wrapper));
+            }
+        });
+
+    });
+
+    $('#q').keypress(function (e) {
+        if (e.which == 13) {
+            $(".posts").empty();
+            var keyword = $(this).val();
+            $(posts).find('entry').each(function () {
+                title = $(this).find("title").text();
+                content = $(this).find("content").text();
+                exp = new RegExp(keyword, "gi");
+
+                if (title.match(exp) || content.match(exp)) {
+                    summary = $(this).find("summary").text();
+                    link = $(this).find("link").attr('href');
+                    pubDate = new Date($(this).find("updated").text());
+                    day = pubDate.getDate();
+                    month = monthNames[pubDate.getMonth()];
+                    year = pubDate.getFullYear();
+                    date = month + ' ' + day + ', ' + year;
+                    link = '<header class="post-header"><h1 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h1><time datetime="' + pubDate + '">' + date + '</time></header>';
+                    content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + '</div></div></div>';
+                    wrapper = '<article class="post" itemscope itemtype="http://schema.org/BlogPosting">' + link + content + '</article>';
+                    $(".posts").append($(wrapper));
+                }
+            });
+            e.preventDefault();
+        }
+
+    });
+
 });
