@@ -1041,7 +1041,7 @@ hr:after {
 }
 
 .row input{
-    display: inline-block;
+    display: inline-block!important;
 }
 
 .powerby {
