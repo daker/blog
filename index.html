@@ -13,7 +13,9 @@
                     <div class="post-field body">{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}</div>
                 </div>
             </div>
-            <a class="more" href="{{ get_url(post.url) }}"><span>Continue Reading</span></a>
+            <div class="post-more">
+                <a class="more" href="{{ get_url(post.url) }}"><span>Continue Reading</span></a>
+            </div>
         </article>
     {% endfor %}
     {% if site.post_limit and posts|length > site.post_limit %}

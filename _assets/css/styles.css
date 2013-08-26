@@ -687,22 +687,21 @@ h3 {
     padding-right: 20px;
 }
 
+.post-more {
+    margin-top: 10px;
+}
 
 a.more {
-    display: block;
-    padding: 5px;
     text-decoration: none;
     color: #fff;
     margin-top: 10px;
-    padding-left: 10px;
+    padding: 5px 10px 6px 10px;
     background-color: #e9573f;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
-    min-width: 170px;
-    max-width: 220px;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -777,9 +776,11 @@ p > code {
     text-align: right;
     margin: 0;
     border: 1px solid #ddd;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
     background: #fff;
 }
 
@@ -803,23 +804,23 @@ p > code {
     right: 100%;
 }
 
-.timeline>li>h3{
+.timeline> li> h3{
     font-size: 15px;
 }
 
-.timeline>li>h3{
+.timeline> li> h3{
     font-size: 15px;
 }
 
-.timeline>li>span {
+.timeline> li> span {
     display: block;
 }
 
-.timeline>li>span>a{
+.timeline> li> span >a{
     font-size: 15px;
 }
 
-#footer {
+footer {
     background: #fff;
     padding: 1.5em 0;
     overflow: hidden;
@@ -827,7 +828,7 @@ p > code {
     margin-top: 15px;
 }
 
-#footer .copyright {
+footer .copyright {
     font-size: 13px;
     font-style: italic;
     text-align: center;
