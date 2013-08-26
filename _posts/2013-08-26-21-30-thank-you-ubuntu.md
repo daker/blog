@@ -3,7 +3,7 @@ layout: post.html
 title: Thank you, Ubuntu!
 tags: [ubuntuplanet, ubuntu]
 ---
-My experience with [Ubuntu][2] started in 2007 when i was doing the internship of my second year in Computer Engineering, the first week was really boring, the second week and while i was trying to fix the DVD driver, i open then i found a Green CD of "OpenSUSE", i booted with the live CD, the OS was a bit complicated and not easy to play with.
+My experience with [Ubuntu][2] started in 2007 when i was doing the internship of my second year in Computer Engineering, the first week was really boring, the second week and while i was trying to fix the DVD driver, i opened the drawer then i found a Green CD of "OpenSUSE", i booted with the live CD, the OS was a bit complicated and not easy to play with.
 
 ![My Ubuntu certificate, signed by Mark Shuttleworth](/assets/posts/ubuntu/certificate.jpg)
 
