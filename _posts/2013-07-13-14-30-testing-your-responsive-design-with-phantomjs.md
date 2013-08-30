@@ -79,5 +79,10 @@ I have coupled PhantomJS with [async.js][0] so i can take multiple screenshots, 
 <blockquote class="twitter-tweet"><p>Testing your <a href="https://twitter.com/search?q=%23responsivedesign&amp;src=hash">#responsivedesign</a>? Take this script for PhantomJS and run it with SlimerJS <a href="http://t.co/wyqiIJustE">http://t.co/wyqiIJustE</a> by <a href="https://twitter.com/AdnaneBelmadiaf">@AdnaneBelmadiaf</a></p>&mdash; SlimerJS (@slimerjs) <a href="https://twitter.com/slimerjs/statuses/356172141277888513">July 13, 2013</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+## Mentioned on
+
+* [Envato][2] - Techniques for mobile and responsive cross-browser testing.
+
 [0]: https://github.com/caolan/async
 [1]: http://slimerjs.org/
+[2]: http://webuild.envato.com/blog/techniques-for-mobile-and-responsive-cross-browser-testing/
