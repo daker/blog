@@ -821,7 +821,7 @@ p > code {
 }
 
 footer {
-    background: #fff;
+    background: #f9f9f9;
     padding: 1.5em 0;
     overflow: hidden;
     border-top: 1px solid #ddd;
@@ -846,7 +846,6 @@ footer .copyright {
     margin-bottom: 10px;
 }
 
-
 .notfound h3.fourofour {
     font-size: 60px;
 }
@@ -858,7 +857,6 @@ footer .copyright {
 .gist .gist-file .gist-data .line-numbers {
     font-size: 13px;
 }
-
 
 .browser-support {
     text-align: center;
