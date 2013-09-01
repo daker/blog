@@ -8,7 +8,7 @@ tags: [django, persona, ubuntuplanet]
 ![Persona](/assets/posts/persona-mozilla.jpg)
 
 ## Installation
-Mozilla provides a library called ```django-browserid``` that integrates Persona authentication into Django, so you can simply added to to your or just install via pip :
+Mozilla provides a library called ```django-browserid``` that integrates Persona authentication into Django, so you can simply added to to your ```requirements.txt``` or just install via pip :
 
 ```sh
 $ sudo pip install django-browserid
