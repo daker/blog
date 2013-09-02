@@ -3,7 +3,7 @@ layout: post.html
 title: 5 HTML5 Javascript APIs to keep an eye on
 tags: [html5, javascript]
 ---
-In my [last post][0], i have talked about HTML5 APIs, so thought it will also interesting to write about some new <strike>old</strike> Javasript APIs. Since CSS has been improving over the time and today you can achieve what was only done with Javascript with CSS only, on the other side Javascript have to improve and follow the evolution, so today Javascript can do a lot of things, like accessing hardware(camera, microphone, gamepad, GPU), accessing the filesystem and websocket.
+In my [last post][0], i have talked about HTML5 APIs, so thought it will also interesting to write about some new <strike>old</strike> Javascript APIs. Since CSS has been improving over the time and today you can achieve what was only done with Javascript with CSS only, on the other side Javascript have to improve and follow the evolution, so today Javascript can do a lot of things, like accessing hardware(camera, microphone, gamepad, GPU), accessing the filesystem and websocket.
 
 ## Battery Status API
 The [Battery Status API][1] allows any webpage to inspect the state of the device's (Laptop, phone or tablet) battery through javascript :
