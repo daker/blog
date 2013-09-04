@@ -211,6 +211,10 @@
         width: 100%;
     }
 
+    .post-header>.post-title {
+        font-size: 30px;
+    }
+
     .post-author-image {
         text-align: center;
     }
