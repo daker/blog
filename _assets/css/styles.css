@@ -1018,29 +1018,75 @@ hr:after {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-}
-
-#signup {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #33383D;
-    color: #FFF;
+    float: left;
 }
 
 .row {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 12px;
-    float: left;
-    margin-right: 10px;
-    text-align: justify;
+    overflow: hidden;
+    border: 3px solid #e9573f;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
-.row input{
-    display: inline-block!important;
+.row input[type="email"]{
+    border: 0;
+    color: #ccc;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    font-size: 25px;
+    font-family: "Ubuntu", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding: 9px 12px;
+    width: 65%;
+    float: left;
+}
+
+.row input[type="email"]::-webkit-input-placeholder,
+.row input[type="email"]:-moz-placeholder,
+.row input[type="email"]::-moz-placeholder,
+.row input[type="email"]:-ms-input-placeholder {
+   color: #ccc;
+}
+
+
+.row input[type="submit"]{
+    background: #e9573f;
+    color: white;
+    padding: 9px 40px;
+    font-size: 25px;
+    font-family: "Ubuntu", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    border: 0;
+    position: relative;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: 150ms ease-out all;
+    -moz-transition: 150ms ease-out all;
+    -o-transition: 150ms ease-out all;
+    transition: 150ms ease-out all;
+    float: right;
+    width: auto;
+}
+
+.row .icon-feed {
+    float: left;
+    font-size: 25px;
+    color: #ccc;
+    text-decoration: none;
+    position: relative;
+    margin-right: 13px;
+    top: 13px;
+}
+
+.notice {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 70%;
 }
 
 .powerby {

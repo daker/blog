@@ -165,6 +165,9 @@
     .post .body>p>.post-image>img {
         max-width: 100%
     }
+    .row input[type=email] {
+        width: 56%;
+    }
 }
 
 
@@ -256,6 +259,12 @@
     }
     #year2013:after {
         margin-left: -25px;
+    }
+    .row input[type=email] {
+        width: 46%;
+    }
+    .row input[type=submit] {
+        padding: 9px 10px;
     }
 
 }
