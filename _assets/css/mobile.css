@@ -244,7 +244,9 @@
     .post .body>p>.post-image>img {
         max-width: 100%
     }
-
+    a.more {
+        font-size: 18px;
+    }
     .kippt-save-button {
         margin-top: 5px !important;
     }
