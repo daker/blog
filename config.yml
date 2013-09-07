@@ -5,7 +5,7 @@ description: Random thoughts on code, life, and future!
 email: daker@ubuntu.com
 title: Adnane Belmadiaf's Blog
 date_format: "%B %d, %Y"
-post_limit: 5
+post_limit: 15
 posts_url: /<year>/<month>/<title>.html
 feed: true
 archives_url: /archives/

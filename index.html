@@ -7,6 +7,10 @@
             <header class="post-header">
                 <h1 itemprop="name headline" class="post-title"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h1>
                 <time datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}">{{ post.date }}</time>
+                <div class="comments">
+                    <a class="comments-count" href="http://daker.me{{ get_url(post.url) }}#disqus_thread" data-disqus-url="http://daker.me{{ get_url(post.url) }}"></a>
+                    <div class="comments-arrow"></div>
+                </div>
             </header>
             <div class="post-content">
                 <div class="post-content-inner">
@@ -23,4 +27,18 @@
             <p><a href="{{ get_url('archives/') }}">Read Older Posts</a></p>
         </div>
     {% endif %}
+{% endblock %}
+
+{% block extrafooter %}
+<script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'daker-blog';
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
 {% endblock %}

@@ -413,7 +413,8 @@ h3 {
 }
 
 .post-header, .post-content {
-    margin: 30px auto 0 auto
+    margin: 30px auto 0 auto;
+    position: relative;
 }
 
 .post-content {
@@ -447,7 +448,8 @@ h3 {
 
 .post-header>.post-title {
     font-size: 40px;
-    line-height: 1;
+    line-height: 35px;
+    margin-bottom: 5px;
 }
 
 .post-header>.post-title a {
@@ -1361,10 +1363,52 @@ input[type="submit"]:active {
     content: "\28";
 }
 
-#indiegogo {
+.comments {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 0 0 11px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    margin-right: -40px;
+}
+
+.comments-count {
     position: relative;
-    left: -60px;
-    width: 224px;
-    height: 486px;
-    border: 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #dededc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #b3b3b1;
+    font-weight: 700;
+}
+
+.comments-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    clip: rect(-4px 12px 18px 0);
+}
+.comments-arrow:after {
+    width: 8px;
+    height: 8px;
+    content: '';
+    display: block;
+
+    background: #fff;
+    border: 1px solid;
+
+    color: #b3b3b1;
+    font-family: Verdana,Geneva,sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+
+    border-color: #dededc;
+-webkit-transform: rotate(45deg) translate(5px,-5px);
+-moz-transform: rotate(45deg) translate(5px,-5px);
+-o-transform: rotate(45deg) translate(5px,-5px);
+transform: rotate(45deg) translate(5px,-5px);
 }

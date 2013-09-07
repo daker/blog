@@ -47,17 +47,20 @@
     .post-author-image {
         text-align: center;
     }
-
     .post-reading-time {
         display: none;
     }
-
     .post-published-date {
         text-align: center;
     }
-
     .post-published-date:before {
         width: 100%;
+    }
+    .post .body>p>.post-image>img {
+        max-width: 100%
+    }
+    .comments {
+        display: none;
     }
     .post-tags {
         display: none;
@@ -76,10 +79,6 @@
     }
     #year2013:after {
         margin-left: -25px;
-    }
-
-    .post .body>p>.post-image>img {
-        max-width: 100%
     }
 }
 
@@ -149,6 +148,9 @@
     .kippt-save-button {
         margin-top: 5px !important;
     }
+    .comments {
+        display: none;
+    }
     .timeline>li,.timeline>li:nth-of-type(even) {
         float: none;
         width: auto;
@@ -196,6 +198,9 @@
         width: 100%;
         text-align: center;
         margin: 0 auto;
+    }
+    .comments {
+        display: none;
     }
     #container{ width:90%; }
     #footer { width: 100%;}

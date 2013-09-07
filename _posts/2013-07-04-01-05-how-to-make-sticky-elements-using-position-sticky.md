@@ -40,7 +40,7 @@ I have made a simple alphabetical contact list with sticky headers using HTML an
     <dfn title="chrome"><div>23.0</div></dfn>
     <dfn title="opera" class="unsupported"><div>—</div></dfn>
     <dfn title="ie" class="unsupported"><div>—</div></dfn>
-    <dfn title="safari" class="unsupported"><div>—</div></dfn>
+    <dfn title="safari"><div>7</div></dfn>
 </div>
 
 One thing you should remember is that this feature is just a proposal that can be standardized or not.
