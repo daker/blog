@@ -3,7 +3,7 @@ layout: post.html
 title: 5 DevTools features to help you debug your WebApp
 tags: [ubuntuplanet, devtools]
 ---
-DevTools is a power tools than can developing Web easier, it has a lot of features some of them are still experimental and you need to enable them in the ```about://flags```.
+DevTools is a powerful tool than can made developing WebApp easier, it has a lot of features some of them are still experimental and you need to enable them in the ```about://flags```.
 
 ![Devtools](/assets/posts/devtools/devtools.png)
 
