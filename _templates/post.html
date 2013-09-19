@@ -27,10 +27,6 @@
         <time datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}" class="post-date">{{ post.timestamp|date('%b %d, %Y at %H:%M') }}</time>
     </p>
 </div>
-
-<div class="post-reading-time"> <strong>Reading time</strong>
-    <p id="readingtime">---</p>
-</div>
 {% if post.tags %}
 <div class="post-tags">
     <strong>Tags</strong>
