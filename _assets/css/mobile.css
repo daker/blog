@@ -80,8 +80,11 @@
     #year2013:after {
         margin-left: -25px;
     }
-
     body .one .bsa_it_ad {
+        width: 160px;
+        margin: 0 auto;
+    }
+    body #bsap_aplink, body #bsap_aplink:hover {
         width: 160px;
         margin: 0 auto;
     }
@@ -176,6 +179,10 @@
         width: 56%;
     }
     body .one .bsa_it_ad {
+        width: 160px;
+        margin: 0 auto;
+    }
+    body #bsap_aplink, body #bsap_aplink:hover {
         width: 160px;
         margin: 0 auto;
     }
@@ -284,6 +291,11 @@
     }
 
     body .one .bsa_it_ad {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    body #bsap_aplink, body #bsap_aplink:hover {
         width: 160px;
         margin: 0 auto;
     }
