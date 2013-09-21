@@ -24,7 +24,7 @@ A template provides a method for declaring document fragments in HTML, it contai
 The W3C defines it as follows :
 > custom elements let authors define their own elements, including new presentation and API, that can be used in HTML documents
 
-This means you will be able to create new HTML elements and extend the existing DOM objects with new ones. The name of any custom element must begin with ```x-``` :
+This means you will be able to create new HTML elements and extend the existing DOM objects with new ones. The name of any custom element must contain a dash (-) :
 
 ```html
 <element name="x-foo-bar" constructor="XFooBar">
