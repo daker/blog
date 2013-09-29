@@ -2,11 +2,13 @@
 
 div.code {
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 div.code>div {
     overflow: auto;
     background-color: #272727;
+    border-radius: 5px;
 }
 
 .gist .gist-file .gist-data {
