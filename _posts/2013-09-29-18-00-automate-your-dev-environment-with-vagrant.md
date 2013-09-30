@@ -3,7 +3,7 @@ layout: post.html
 title: Automate Your Dev Environment With Vagrant
 tags: [vagrant, ubuntuplanet]
 ---
-I started feeling the needs of automating my developement environments when i started contributing to several django projects run by the community, each project uses a different django version and several dependencies, thoses dependencies can be found or not on the Ubuntu version i use for my daily work. Vagrant is a great tool for those situations, it allow you to create and manage custom virtual environments to your needs using automated configuration technologies such as Chef, Puppet and Shell scripts.
+I started feeling the need of automating my developement environments when i started contributing to several django projects run by the community, each project uses a different django version and several dependencies, thoses dependencies can be found or not on the Ubuntu version i use for my daily work. Vagrant is a great tool for those situations, it allow you to create and manage custom virtual environments to your needs using automated configuration technologies such as Chef, Puppet and Shell scripts.
 
 ![Vagrant](/assets/posts/vagrant/vagrant.jpg)
 
