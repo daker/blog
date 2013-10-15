@@ -72,7 +72,7 @@ MainView {
 }
 ```
 
-you need to create a manifest file ```manifest.json``` :
+you need to create a ```manifest.json``` file :
 
 ```json
 {
@@ -92,7 +92,7 @@ you need to create a manifest file ```manifest.json``` :
 }
 ```
 
-the security policy groups ```x-type.json```
+the security policy groups ```x-type.json``` :
 
 ```json
 {
