@@ -35,7 +35,7 @@ MainView {
 }
 ```
 
-The problem with using the QtWebKit Webview is that the device-pixel-ratio (DPR) is not set automatically causing the content of the Webview to not scale correctly, so you'll need to get the corresponding value for your device from the ```QTWEBKIT_DPR``` environment variable, there actually no way to read those variables using QML so you'll need to use some C++ code to read the ```QTWEBKIT_DPR``` and passe it to QML so the content of the WebView will scale accordingly.
+The problem with using the QtWebKit Webview is that the device-pixel-ratio (DPR) is not set automatically causing the content of the Webview to not scale correctly, so you'll need to get the corresponding value for your device from the ```QTWEBKIT_DPR``` environment variable, there is actually no way to read those variables using QML so you'll need to use some C++ code to read the ```QTWEBKIT_DPR``` and passe it to QML so the content of the WebView will scale accordingly.
 
 The Ubuntu Touch Browser Plugin provides a component called ```UbuntuWebView```, it uses some kind of UA overrides to bypass the UA sniffing used to serve the mobile version of webapp(Gmail, G+, Facebook, Twitter, etc...) and changes the UA on the fly, unfortunately there was no way to set your own UA using the ```UbuntuWebView``` but now you can since this [bug #1237365][1] has been fixed.
 
