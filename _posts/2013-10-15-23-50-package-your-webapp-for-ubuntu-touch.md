@@ -1,7 +1,7 @@
 ---
 layout: post.html
 title: Package your Webapp for Ubuntu Touch
-tags: [utouchdev]
+tags: [utouchdev, ubuntuplanet]
 ---
 Last week i discovered a HTML5 game called "[X-Type][0]", which is basically a free dual stick shooter with endless boss battles. Unfortunately this game does only work on iOS and Android and it does use the UA sniffing mechanism to serve both desktop and mobile versions, and using the Ubuntu Touch user-agent it will only serve the desktop version which will not work on the phone.
 
@@ -105,7 +105,7 @@ the security policy groups ```x-type.json```
 
 and a .desktop file :
 
-```
+```js
 [Desktop Entry]
 Name=x-type
 Comment=A Free HTML5 Dual Stick Shooter
@@ -119,7 +119,6 @@ X-Ubuntu-Touch=true
 you need to add the icon and now all you have to do is to build the click package using ```click build .```and [upload][3] it to the store. I have also packaged another HTML5 game called [BytesJack][4] using the same method, the source code of both games can be found [here][5] and [here][6].
 
 Happy hacking!
-```
 
 [0]: http://phoboslab.org/xtype/
 [1]: https://bugs.launchpad.net/webbrowser-app/+bug/1237365
