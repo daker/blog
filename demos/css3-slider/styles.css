@@ -30,6 +30,27 @@ h1 {
     margin-top: 30px;
 }
 
+p.credit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    font-style: italic;
+}
+
+p.credit a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p.credit a:hover {
+    text-decoration: underline;
+}
+
+/* Slider CSS */
+
 .container {
     width: 960px;
     margin: 0 auto;
