@@ -3,7 +3,7 @@ layout: post.html
 title: Package your Webapp for Ubuntu Touch
 tags: [utouchdev, ubuntuplanet]
 ---
-Last week i discovered a HTML5 game called "[X-Type][0]", which is basically a free dual stick shooter with endless boss battles. Unfortunately this game does only work on iOS and Android and it does use the UA sniffing mechanism to serve both desktop and mobile versions, and using the Ubuntu Touch user-agent it will only serve the desktop version which will not work on the phone.
+Last week i discovered a HTML5 game called '[X-Type][0]', which is basically a free dual stick shooter with endless boss battles. Unfortunately this game does only work on iOS and Android and it does use the UA sniffing mechanism to serve both desktop and mobile versions, and using the Ubuntu Touch user-agent it will only serve the desktop version which will not work on the phone.
 
 ![X-Type running on Ubuntu Touch](/assets/posts/xtype/xtype.png)
 
