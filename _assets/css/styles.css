@@ -1130,13 +1130,16 @@ input[type="submit"]:active {
     color: #16a765;
 }
 
+.demos {
+    overflow: hidden;
+}
+
 .demo {
-    background: #2d3538;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    width: 250px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     margin: 0 2% 2% 0;
     float: left;
     overflow: hidden;
@@ -1147,15 +1150,9 @@ input[type="submit"]:active {
     margin-right: 0;
 }
 
-.demo img {
-    -moz-border-radius: 6px 6px 0 0;
-    -webkit-border-radius: 6px 6px 0 0;
-    border-radius: 6px 6px 0 0;
-    float: left;
-}
 .demo .inner-content {
     background: #2d3538;
-    padding: 20px 15px 0 15px;
+    padding: 20px 15px 15px 15px;
     position: relative;
     z-index: 5;
     clear: both;
@@ -1177,7 +1174,9 @@ input[type="submit"]:active {
     color: #838383;
     font-size: 12px;
     line-height: 18px;
-    height: 60px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .demo .inner-content .full-desc {
     margin: -60px 15px 0 0;
@@ -1194,20 +1193,28 @@ input[type="submit"]:active {
     -moz-border-radius: 6px 6px 0 0;
     -webkit-border-radius: 6px 6px 0 0;
     border-radius: 6px 6px 0 0;
-    width: 250px;
-    height: 141px;
+    width: 230px;
+    height: 130px;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
     opacity: 0;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.demo img {
+    width: 230px;
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    float: left;
 }
 .demo .overlay .button-launch {
-    margin: 42px 3px 0 0;
+    margin: 55px 3px 0 0;
     display: inline-block;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 3px;
