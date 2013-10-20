@@ -34,11 +34,41 @@
       ga('create', 'UA-41135963-1', 'daker.me');
       ga('send', 'pageview');
     </script>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=420004041435199";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
 </head>
 <body>
 <section id="content">
+    <div id="fb-root"></div>
     <a href="https://github.com/daker/css3-slider"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+
+    <div style="position: absolute; top: 150px; left: 10px; border: 0;">
+        <div>
+            <div class="fb-like" data-href="http://daker.me/demos/css3-slider/" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+        </div>
+        <div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="AdnaneBelmadiaf">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div>
+            <div class="g-plusone" data-size="medium"></div>
+        </div>
+    </div>
     <h1>CSS3 Slider</h1>
+
     <div class="container">
         <div id="slider" style="width: 3000px;">
             <div class="slide">
