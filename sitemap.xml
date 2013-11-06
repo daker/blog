@@ -18,6 +18,20 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>http://daker.me/demos/</loc>
+        <lastmod>{{ none|date('%Y-%m-%dT%H:%M:%SZ') }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>http://daker.me/demos/css3-slider/</loc>
+        <lastmod>{{ none|date('%Y-%m-%dT%H:%M:%SZ') }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 {% for name, tag in tags %}
     <url>
         <loc>{{ get_url(tag.url,true) }}</loc>
