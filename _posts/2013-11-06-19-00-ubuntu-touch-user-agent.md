@@ -3,7 +3,7 @@ layout: post.html
 title: Ubuntu Touch User-Agent
 tags: [utouchdev, ubuntuplanet]
 ---
-With the launch of v1.0 of [Ubuntu Touch][0], the OS now has its own QTWebkit based browser, which will be replaced by [Oxide][1] a Chromium-powered webview by 14.04, there has been a lot of [discussions][2] arround the user-agent because many large sites(Facebook, Google, Twitter, Yahoo etc..) are sniffing the UA(for iPhone or Android) to serve the mobile version of the site.
+With the launch of [Ubuntu Touch][0] v1.0, the OS now ships its own QTWebkit based browser, which will be replaced by [Oxide][1] a Chromium-powered webview by 14.04, there has been a lot of [discussions][2] arround the user-agent because many large sites(Facebook, Google, Twitter, Yahoo etc..) are sniffing the UA(for iPhone or Android) to serve the mobile version of the site.
 
 Adding an Android or iPhone token will lead to unwanted behaviours, like showing ads for the Android app or even trying to open the Google Play app or the Youtube app. The browser now reports it in the following formats, depending on whether the device is a phone or a tablet, with the addition of an [override mechanism][3] that will override the UA on the fly and the site will serve us a proper mobile content.
 
