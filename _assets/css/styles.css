@@ -673,20 +673,33 @@ h3 {
     text-align: right;
 }
 
+
+.prev-post>a.title:hover,
+.next-post>a.title:hover{
+    background: #e9573f url("../images/icon-arrow-white2.png") no-repeat 1% center;
+    background-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
 .prev-post>a.title span,
 .next-post>a.title span {
-    background-size: 13px 16px;
-    background-image: url("../images/icon-arrow-white2.png");
-    background-repeat: no-repeat;
-    background-position: left center;
     padding-left: 20px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .next-post>a.title span {
-    background-image: url("../images/icon-arrow-white.png");
-    background-position: right center;
     padding-left: 0;
     padding-right: 20px;
+}
+
+.next-post>a.title:hover{
+    background: #e9573f url("../images/icon-arrow-white.png") no-repeat 99% center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .post-more {

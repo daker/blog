@@ -1,11 +1,20 @@
 {% extends 'layout.html' %}
 
+{% block extrahead %}<title>{{ tag.name }} — {{ site.title }}</title>
+    <meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="og:title" content="{{ tag.name }} — {{ site.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AdnaneBelmadiaf">
+    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="twitter:title" content="{{ tag.name }} — {{ site.title }}">
+    <meta property="twitter:url" content="http://daker.me/tags/{{ tag.name }}/">
+    <meta name="twitter:creator" content="@AdnaneBelmadiaf">{% endblock %}
 
-{% set title = 'Tag  &rsaquo; ' ~ tag.name %}
 
 {% block content %}
-    <h2>Tag &rsaquo; {{ tag.name }}</h2>
-
+    <h1>Topic: {{ tag.name }}</h1>
     <section id="archive">
         {% for year, archive in tag.archives %}
         <section class="timeline-wrapper" id="year{{ year }}">
