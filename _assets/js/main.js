@@ -16,6 +16,11 @@ $(document).ready(function () {
         date,
         wrapper;
 
+    var userAgent = navigator.userAgent.toString().toLowerCase();
+    if(userAgent.indexOf("ubuntu; mobile") > -1 | userAgent.indexOf("ubuntu; tablet") > -1) {
+        alert("Oh! it appears that you are running Ubuntu Touch, maybe you'll be interested in using my radio streaming app, just go to the Dash search for 'Rad.io' and enjoy your favorite radio station :]");
+    }
+
     $(".post-field img").each(function () {
         if ($(this).attr("alt"))
             $(this).wrap('<figure class="post-image"></figure>')
