@@ -59,7 +59,7 @@ Metric {
 
 The Metric component provides two methods :
 
-— ```increment(double amount = 1.0)``` : You can use this method if you want to we want to increment metric by a specific amount ex: gameMetric.increment(3) or gameMetric.increment() to increment the metric by 1.
+— ```increment(double amount = 1.0)``` : You can use this method if you want to increment metric by a specific amount ex: gameMetric.increment(3) or gameMetric.increment() to increment the metric by 1.
 — ```update(double value)``` : You can use this method if you want to reset the metric and set a specific amount ex: gameMetric.update(5)
 
 The use of the Metric is not limited by the number.
