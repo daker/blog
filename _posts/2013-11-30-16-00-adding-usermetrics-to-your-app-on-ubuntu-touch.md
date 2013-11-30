@@ -4,7 +4,7 @@ title: Adding UserMetrics to your app on Ubuntu Touch
 tags: [utouchdev, ubuntuplanet]
 ---
 
-The Welcome Screen infographic is one of the key component for the customization of the user experience on [Ubuntu Touch][0], beautiful visualisations of data from multiple sources, the ```UserMetrics``` is the responsible component for updating the infographic using QML.
+The Welcome Screen infographic is one of the key components for the customization of the user experience on [Ubuntu Touch][0], beautiful visualisations of data from multiple sources, the ```UserMetrics``` is the responsible component for updating the infographic using QML.
 
 ![Welcome Screen](/assets/posts/utouch/5.png)
 
