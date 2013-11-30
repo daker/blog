@@ -733,7 +733,8 @@ a.more span {
     padding-left: 20px;
 }
 
-p > code {
+p > code,
+.post-field code  {
     font-size: 18px;
     color: #A29A9A
 }
