@@ -9,19 +9,19 @@ Adding an Android or iPhone token will lead to unwanted behaviours, like showing
 
 ![Facebook Android Ads](/assets/posts/utouch/1.png)
 
-#Phone
+## Phone
 
 ```sh
 Mozilla/5.0 (Ubuntu; Mobile) WebKit/537.21
 ```
 
-#Tablet
+## Tablet
 
 ```sh
 Mozilla/5.0 (Ubuntu; Tablet) WebKit/537.21
 ```
 
-#Pattern
+## Pattern
 
 ```sh
 Mozilla/5.0 (Ubuntu; $FormFactor) WebKit/$WebKitRev

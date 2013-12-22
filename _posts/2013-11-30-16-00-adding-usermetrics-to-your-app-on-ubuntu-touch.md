@@ -14,7 +14,7 @@ To use the ```UserMetrics``` QML module you need to install ```qtdeclarative5-us
 $ sudo apt-get install qtdeclarative5-usermetrics0.1
 ```
 
-# Apparmor Policy groups
+## Apparmor Policy groups
 
 Add the ```usermetrics``` to your apparmor file :
 
@@ -28,7 +28,7 @@ Add the ```usermetrics``` to your apparmor file :
 }
 ```
 
-# QML
+## QML
 
 First you need to import the ```UserMetrics``` module :
 

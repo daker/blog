@@ -7,9 +7,9 @@ Stylus is an expressive, dynamic, robust CSS pre-processor built on top of Node.
 
 ![Stylus](/assets/posts/stylus.png)
 
-# Installation
+## Installation
 
-## Ubuntu
+### Ubuntu
 ```sh
 $ sudo add-apt-repository ppa:chris-lea/node.js
 $ sudo apt-get update
@@ -17,7 +17,7 @@ $ sudo apt-get install nodejs
 $ sudo npm install -g stylus
 ```
 
-## Mac OSX
+### Mac OSX
 
 ```sh
 $ brew install node
@@ -46,7 +46,7 @@ which produce the following CSS code
 }
 ```
 
-# Variables
+## Variables
 
 Defining variables is simple, you don't need to use $ or @ like in Sass or LESS, the good part is that Stylus also support the $ so if you are coming from Sass your variables will remain functionnal.
 
@@ -71,7 +71,7 @@ body {
 ```
 Did you noticed something ? the color has been compressed automatically.
 
-# Mixins
+## Mixins
 
 Mixins are similar to functions, but used in a different way, a good example of a mixin is the border-radius property
 
@@ -102,7 +102,7 @@ The compiled version will be
 ```
 Handy for vendor-prefixed properties.
 
-#Iteration
+## Iteration
 
 Stylus gives you the ablity to iterate expressions via for/in
 
@@ -137,7 +137,7 @@ ul li:nth-child(5) {
 }
 ```
 
-# Inheritance
+## Inheritance
 
 Stylus provides a good inheritance mecanism
 
@@ -163,7 +163,7 @@ Stylus provides a good inheritance mecanism
 }
 ```
 
-# Error Reporting
+## Error Reporting
 
 Stylus has fantastic error reporting built-in for syntax, parse, and evaluation errors—complete with stack traces, line numbers, and filenames.
 
@@ -193,7 +193,7 @@ cannot perform solid[(#ccc)]
 
 Stylus provides a detailed stack trace much like you would find in any decent language.
 
-# Literal CSS
+## Literal CSS
 
 This the best part of Stylus, you can still use your CSS code using ```@css``` and it will work, how that will help you in your workflow? you'll be able to integrate Stylus progressivly in your project
 
@@ -230,7 +230,7 @@ body {
 }
 ```
 
-# Conclusion
+## Conclusion
 
 Stylus is certainly worth a try, and if you are a Compass guy, Stylus has an extension called [nib][0] that provides robust cross-browser CSS3 mixins. Sure there is more you can learn about Stylus and there is [docs][1] for that.
 

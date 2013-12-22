@@ -7,17 +7,17 @@ I started feeling the need of automating my developement environments when i sta
 
 ![Vagrant](/assets/posts/vagrant/vagrant.jpg)
 
-# Installing Vagrant
+## Installing Vagrant
 
 Vagrant works with VirtualBox, and support [Vmware Fusion][0] and AWS via plugins
 
-## Install Virtualbox
+### Install Virtualbox
 
 ```sh
 $ sudo apt-get install virtualbox
 ```
 
-## Install Vagrant
+### Install Vagrant
 
 ```sh
 $ sudo apt-get install vagrant
@@ -30,7 +30,7 @@ $ vagrant --version
 Vagrant version 1.2.0
 ```
 
-# Get your first VM up and running
+## Get your first VM up and running
 
 1.  start a vagrant config file in an empty project folder. this will create ```Vagrantfile```
 
@@ -79,7 +79,7 @@ Wait for the command to finish, then you will have a VM ready for you to connect
 $ vagrant ssh
 ```
 
-# Provisioning
+## Provisioning
 
 Vagrant allow you to use different Provisioners to easily setup your VM with everything it needs to run your project :
 

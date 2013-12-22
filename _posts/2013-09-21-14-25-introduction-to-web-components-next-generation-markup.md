@@ -7,7 +7,7 @@ Web Components enables frontend developers to create custom and reusable HTML ta
 
 ![Web Components](/assets/posts/webcomponents.png)
 
-# HTML Templates
+## HTML Templates
 
 A template provides a method for declaring document fragments in HTML, it contains a chunks of markup that can be used later. The ```template``` element is not rendered but parsed, which means that scripts aren't processed, css and images aren't downloaded, it's completly hidden from the document object, so for ex you can't access the ```.comment-text``` element using ```document.querySelector```.
 
@@ -20,7 +20,7 @@ A template provides a method for declaring document fragments in HTML, it contai
 
 <iframe width="100%" height="300" src="http://jsfiddle.net/daker/m85DN/embedded/result,css,html,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-# Custom Elements
+## Custom Elements
 The W3C defines it as follows :
 > custom elements let authors define their own elements, including new presentation and API, that can be used in HTML documents
 
@@ -33,14 +33,14 @@ This means you will be able to create new HTML elements and extend the existing 
 ```
 and use it like this ```<x-foo-bar>Test</x-foo-bar>```
 
-# Shadow DOM
+## Shadow DOM
 Browser vendors have been using Shadow DOM for quite awhile now to build their own components. These components are built using HTML and CSS, but you cannot see how thesee elements are made up on the dev tools simply because they use the Shadow DOM , ex : ```<video>```, ```<textarea>```, ```<input type="date">```, ```<input type="time">```
 
-> Shadow DOM gives us markup encapsulation, style boundaries, and exposes (to web developers) the same mechanics browsers vendors have been using to implement their internal UI. — Eric Bidelma
+> Shadow DOM gives us markup encapsulation, style boundaries, and exposes (to web developers) the same mechanics browsers vendors have been using to implement their internal UI. — Eric Bidelman
 
 ![Date & time input](/assets/posts/input-date-time.png)
 
-# HTML Imports
+## HTML Imports
 HTML Imports is similar way to how we load CSS stylesheets, it's a new type of link tag which allow developers to import and use HTML code from a url, after importing the page you need to use some Javascript code to manipulate it and inject your code :
 
 ```html
