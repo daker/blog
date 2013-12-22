@@ -141,7 +141,7 @@ F(5);
 * ```Ctrl + Shift + J``` : Open the Chrome/ium Console
 * ```Ctrl+l``` : Clear the console
 
-## Reference
+## References
 
 * [Firebug Wiki][1]
 * [Chrome DevTools documentation][2]
