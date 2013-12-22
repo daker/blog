@@ -58,7 +58,7 @@ if (!authenticated) {
 console.groupEnd();
 ```
 
-You also do nested grouping :
+You can also do nested grouping :
 
 ```js
 var user = "jsmith", authenticated = true, authorized = true;
