@@ -378,12 +378,14 @@ h3 {
 }
 
 #searchForm input[type="search"] {
-    background: #ffffff;
+    background: #fff url(../images/search_icon.png) center right no-repeat;
+    background-position-x: 97%;
     color: #ccc;
     font-weight: 300;
     font-style: normal;
     border: 1px solid #DEDEDC;
     padding: 0 10px;
+    padding-right: 25px;
     height: 30px;
     font-size: 13px;
     -webkit-border-radius: 999em;
@@ -676,13 +678,14 @@ h3 {
 
 .next-post>a.title {
     text-align: right;
+    padding-right: 40px;
 }
 
 
 .prev-post>a.title:hover,
 .next-post>a.title:hover{
     background: #e9573f url("../images/icon-arrow-white2.png") no-repeat 1% center;
-    background-size: 25px;
+    background-size: 20px;
     color: #fff;
     text-decoration: none;
 }
@@ -690,7 +693,6 @@ h3 {
 .prev-post>a.title span,
 .next-post>a.title span {
     padding-left: 20px;
-
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -703,6 +705,7 @@ h3 {
 
 .next-post>a.title:hover{
     background: #e9573f url("../images/icon-arrow-white.png") no-repeat 99% center;
+    background-size: 20px;
     color: #fff;
     text-decoration: none;
 }
