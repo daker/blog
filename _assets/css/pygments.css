@@ -1,19 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
-
-div.code {
+.code {
     margin-bottom: 20px;
     border-radius: 5px;
 }
 
-div.code>div {
+.code > div {
     overflow: auto;
     background-color: #272727;
     border-radius: 5px;
 }
 
-.gist .gist-file .gist-data {
-    background-color: #272727!important
-}
 
 .highlighttable .linenos, .highlighttable .code {
     padding: 9px
@@ -21,18 +16,15 @@ div.code>div {
 
 .highlight code, .highlight pre {
     font-size: 13px;
-    color: #fdce93!important;
-    font-family: 'Ubuntu Mono'!important;
+    color: #fdce93;
+    font-family: 'Ubuntu Mono';
+    font-weight: 400;
 }
 
 .highlighttable .linenos {
     background-color: #ddd;
     color: #262626;
     font-size: 12px;
-}
-
-.gist .gist-file .gist-data .line-numbers {
-    font-size: 12px!important
 }
 
 .highlight .hll {
