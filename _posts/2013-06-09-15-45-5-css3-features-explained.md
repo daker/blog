@@ -3,7 +3,6 @@ layout: post.html
 title: 5 CSS3 features explained
 tags: [css3]
 ---
-
 CSS3 is one of the coolest new web technologies available to front-end developers right now, overtime we have seen so many features that generally were implemented via [JavaScript][0], can now be acheived with a few lines of CSS.
 So in this post i will explain to you five features that will save you time and energy.
 
