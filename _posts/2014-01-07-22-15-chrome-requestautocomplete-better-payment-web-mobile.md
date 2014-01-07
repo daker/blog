@@ -113,6 +113,6 @@ form.addEventListener('autocompleteerror', function(event) {
 You can already start using it while being compatible with others browsers that didn't implement it yet(and hope they will standardize it), by using the ```event.reason``` as shown above and fallback to a normal checkout form.
 
 ## Conclusion
-From a consumer percepective, it means that the 21 pieces of data to enter will be reduced to two or three clicks, this will dramatically improve the usability and conversion rates.
+From a consumer perspective, it means that the 21 pieces of data to enter will be reduced to two or three clicks, this will dramatically improve the usability and conversion rates.
 
 NB: The ```requestAutocomplete() ``` is only implemented on Chrome Mobile and Google Chrome for Windows & MacOS.
