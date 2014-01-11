@@ -1,7 +1,7 @@
 ---
 layout: post.html
 title: How to use the Built-in Screen Recording in Android 4.4 KitKat
-tags: [android]
+tags: [android, ubuntuplanet]
 ---
 Android 4.4 KitKat now supports screen recording, it's only accessible via an ADB command on unrooted devices a. This featues is really a great way to create walkthroughs, tutorials for apps and also perfect for reporting bugs.
 
