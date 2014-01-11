@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-01-11, 18:08)
+ * app.min.css 0.0.3 (2014-01-11, 20:24)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -56,6 +56,7 @@ table{border-collapse:collapse;border-spacing:0}
 html{height:100%;max-height:100%}
 body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;height:100%;max-height:100%;font-family:'Ubuntu',Tahoma,sans-serif;font-size:18px;font-weight:400;line-height:1.6em;background:#fff;color:#555;border-top:3px solid #e9573f}
 code{font-size:18px;color:#a29a9a}
+video{margin:0 auto;display:block}
 figure{margin:0;}
 figure > img{margin:0 auto;display:block;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;max-width:700px}
 figcaption{font-size:13px;font-style:italic;text-align:center;color:#999}
@@ -314,8 +315,7 @@ img{max-width:100% !important}
 @page{margin:.5cm}
 p,h2,h3{orphans:3;widows:3}
 h2,h3{page-break-after:avoid}
-.post-author-icons{display:none}
-.body .one .bsa_it_ad{display:none}
+.post-author-icons,#signup,.body .one .bsa_it_ad{display:none}
 }@media only screen and (min-width: 870px) and (max-width: 1170px){body{font-size:1.3em}
 .site-header{float:none;width:90%;text-align:center;margin-bottom:15px}
 #searchForm{display:block;width:100%;text-align:center;margin:0 auto;margin-bottom:10px}
