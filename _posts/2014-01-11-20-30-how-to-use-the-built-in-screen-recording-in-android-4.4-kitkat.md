@@ -5,7 +5,9 @@ tags: [android]
 ---
 Android 4.4 KitKat now supports screen recording, it's only accessible via an ADB command on unrooted devices a. This featues is really a great way to create walkthroughs, tutorials for apps and also perfect for reporting bugs.
 
-<video src="/assets/posts/android4.4/recording.mp4" width="350" height="500"></video>
+<video controls autoplay width="350" height="500">
+  <source src="/assets/posts/android4.4/recording.mp4" type="video/mp4">
+</video>
 
 To start using it you need to install ADB, you can use the phablet-team PPA if you are using Ubuntu which has the tools and dependencies for 12.04, 12.10, 13.04 and 13.10 to get everything setup, if not you can download the Android SDK from the [Android developer site][0]
 
