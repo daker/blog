@@ -5,16 +5,15 @@
         {% if site.post_limit and loop.index > site.post_limit %}{% break %}{% endif %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post-header">
-                <h2 itemprop="name headline" class="post-title"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h2>
-                <time datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}">{{ post.date }}</time>
-                <div class="comments">
-                    <a class="comments-count" href="http://daker.me{{ get_url(post.url) }}#disqus_thread" data-disqus-url="http://daker.me{{ get_url(post.url) }}"></a>
-                    <div class="comments-arrow"></div>
-                </div>
+                <h2 itemprop="name headline" class="post-title">
+                    <a itemprop="url" href="{{ get_url(post.url) }}">{{ post.title }}</a>
+                </h2>
+                <time class="post-meta-pubdate" datetime="{{ post.timestamp|date('%Y-%m-%d %H:%M:%S+01:00') }}">{{ post.date }}</time> -
+                <a class="post-meta-comments" href="http://daker.me{{ get_url(post.url) }}#disqus_thread" data-disqus-url="http://daker.me{{ get_url(post.url) }}"></a>
             </header>
             <div class="post-content">
                 <div class="post-content-inner">
-                    <div class="post-field body">{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}</div>
+                    <div class="post-field">{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}</div>
                 </div>
             </div>
             <div class="post-more">
@@ -32,13 +31,14 @@
 {% block extrafooter %}
 <script type="text/javascript">
     // <![CDATA[
-        var disqus_shortname = 'daker-blog';
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
+    var disqus_shortname = 'daker-blog';
+    (function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
     //]]>
-    </script>
+</script>
 {% endblock %}

@@ -1,0 +1,55 @@
+*
+    font-smoothing antialiased
+    text-rendering optimizeLegibility
+    -webkit-box-sizing border-box
+    -moz-box-sizing border-box
+    box-sizing border-box
+
+::-webkit-scrollbar
+    margin-right 5px
+    background-color #eee
+    width 10px
+
+::-webkit-scrollbar-track
+    -webit-box-shadow 0 0 2px #ccc
+    box-shadow 0 0 2px #ccc
+
+::-webkit-scrollbar-thumb
+    border 1px #eee solid
+    background #777
+    -webit-box-shadow 0 0 8px #555 inset
+    box-shadow 0 0 8px #555 inset
+    -webit-transition all .3s ease-out
+    transition all .3s ease-out
+    &:window-inactive
+        background #bbb
+        box-shadow 0 0 8px #999 inset
+    &:hover
+        background #999
+
+::-moz-selection,
+::selection
+    color #fff
+    color rgba(255,255,255,.85)
+    background #CC675B
+
+html
+    height 100%
+    max-height 100%
+
+body
+    text-rendering optimizeLegibility
+    -webkit-font-smoothing antialiased
+    height 100%
+    max-height 100%
+    font-family 'Ubuntu', Tahoma, sans-serif;
+    font-size 18px
+    font-weight 400
+    line-height 1.6em
+    background #fff
+    color #555
+    border-top 3px solid #e9573f
+
+code
+    font-size 18px
+    color #A29A9A

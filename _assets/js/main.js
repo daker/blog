@@ -86,7 +86,7 @@ $(document).ready(function () {
                 month = monthNames[pubDate.getMonth()];
                 year = pubDate.getFullYear();
                 date = month + ' ' + day + ', ' + year;
-                link = '<header class="post-header"><h1 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h1><time datetime="' + pubDate + '">' + date + '</time></header>';
+                link = '<header class="post-header"><h2 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h2><time class="post-meta-pubdate" datetime="' + pubDate + '">' + date + '</time></header>';
                 content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + '</div></div></div>';
                 wrapper = '<article class="post" itemscope itemtype="http://schema.org/BlogPosting">' + link + content + '</article>';
                 $(".posts").append($(wrapper));
@@ -112,7 +112,7 @@ $(document).ready(function () {
                     month = monthNames[pubDate.getMonth()];
                     year = pubDate.getFullYear();
                     date = month + ' ' + day + ', ' + year;
-                    link = '<header class="post-header"><h1 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h1><time datetime="' + pubDate + '">' + date + '</time></header>';
+                    link = '<header class="post-header"><h2 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h2><time class="post-meta-pubdate" datetime="' + pubDate + '">' + date + '</time></header>';
                     content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + '</div></div></div>';
                     wrapper = '<article class="post" itemscope itemtype="http://schema.org/BlogPosting">' + link + content + '</article>';
                     $(".posts").append($(wrapper));
@@ -120,7 +120,5 @@ $(document).ready(function () {
             });
             e.preventDefault();
         }
-
     });
-
 });

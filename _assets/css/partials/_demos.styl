@@ -1,0 +1,94 @@
+.demos
+    overflow hidden
+
+.demo
+    -moz-border-radius 6px
+    -webkit-border-radius 6px
+    border-radius 6px
+    width 230px
+    height 230px
+    margin 0 2% 2% 0
+    float left
+    overflow hidden
+    position relative
+    &:nth-child(4n
+        & + 4)
+            margin-right 0
+    .inner-content
+        background #2d3538
+        padding 20px 15px 15px 15px
+        position relative
+        z-index 5
+        clear both
+        h4
+            height 21px
+            a
+                color #fff
+                font-size 1em
+                letter-spacing 0.1em
+                text-transform uppercase
+                &:hover
+                    color #77cc6d
+                    text-decoration none
+        p
+            color #838383
+            font-size 12px
+            line-height 18px
+            margin 0
+            margin-top 10px
+            margin-bottom 20px
+        .full-desc
+            margin -60px 15px 0 0
+            position absolute
+            display none
+    .overlay
+        text-align center
+        background rgba(0, 222, 255, .25)
+        -moz-border-radius 6px 6px 0 0
+        -webkit-border-radius 6px 6px 0 0
+        border-radius 6px 6px 0 0
+        width 230px
+        height 130px
+        position absolute
+        top 0
+        left 0
+        display none
+        opacity 0
+        -webkit-transition all .5s ease-in-out
+        -moz-transition all .5s ease-in-out
+        -o-transition all .5s ease-in-out
+        transition all .5s ease-in-out
+        .button-launch
+            margin 55px 3px 0 0
+            display inline-block
+            background rgba(0, 0, 0, 0.8)
+            border-radius 3px
+            text-decoration none
+            text-transform uppercase
+            font-size 14px
+            color #fff
+            line-height 25px
+            padding 0 10px
+        .button-demo
+            background rgba(0, 0, 0, 0.8)
+            display inline-block
+            color #fff
+            border-radius 3px
+            text-decoration none
+            text-transform uppercase
+            font-size 14px
+            line-height 25px
+            padding 0 10px
+    img
+        width 230px
+        -moz-border-radius 6px 6px 0 0
+        -webkit-border-radius 6px 6px 0 0
+        border-radius 6px 6px 0 0
+        float left
+
+.b
+    &:hover
+        .overlay
+            display block!important
+            opacity 1
+

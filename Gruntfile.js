@@ -4,34 +4,24 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    concat: {
-      options:{
-        separator: ';'
-      },
-      css:{
-        src: ['_assets/css/styles.css', '_assets/css/pygments.css', '_assets/css/mobile.css'],
-        dest: '_assets/css/app.min.css'
-      }
-    },
-    cssmin: {
+    stylus: {
       options: {
-            banner: '/*!\n' +
+        banner: '/*!\n' +
         ' * app.min.css <%= pkg.version %> (<%= grunt.template.today("yyyy-mm-dd, HH:MM") %>)\n' +
         ' * https://daker.me/\n' +
         ' * CC BY-SA 3.0\n' +
-        ' */'
+        ' */\n'
       },
-      compress: {
+      compile: {
         files: {
-          '_assets/css/app.min.css': [ '<%= concat.css.dest %>' ]
+          '_assets/css/app.min.css': '_assets/css/styles.styl',
         }
       }
     }
   });
 
-  grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
-  grunt.loadNpmTasks( 'grunt-contrib-concat' );
+  grunt.loadNpmTasks( 'grunt-contrib-stylus' );
 
   // Default task.
-  grunt.registerTask( 'default', [ 'concat', 'cssmin' ] );
+  grunt.registerTask( 'default', [ 'stylus' ] );
 };

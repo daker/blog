@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
     <meta charset="utf-8">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -45,6 +45,27 @@
     {% if site.feed %}<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">
     <link rel="alternate" href="{{ get_url('feed-ubuntuplanet.xml') }}" type="application/atom+xml">{% endif %}
     {% if site.pygmentize %}<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">{% endif %}
+</head>
+
+<body itemscope itemtype="http://schema.org/CreativeWork">
+    <header>
+        <menu id="nav">
+            <a href="{{ get_url() }}">Blog</a>
+            <a href="{{ get_url('archives/') }}">Archives</a>
+            <a href="{{ get_url('demos/') }}">Demos</a>
+            {% if site.feed %}<a href="{{ get_url('feed.xml') }}">Feed</a>{% endif %}
+        </menu>
+    </header>
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer">
+        <p class="copyright">
+            {% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}<br />
+            This work is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>
+        </p>
+    </footer>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,25 +74,6 @@
       ga('create', 'UA-41135963-1', 'daker.me');
       ga('send', 'pageview');
     </script>
-</head>
-
-<body itemscope itemtype="http://schema.org/CreativeWork">
-    <section id="header">
-        <div id="nav">
-            <a href="{{ get_url() }}">Blog</a>
-            <a href="{{ get_url('archives/') }}">Archives</a>
-            <a href="{{ get_url('demos/') }}">Demos</a>
-            {% if site.feed %}<a href="{{ get_url('feed.xml') }}">Feed</a>{% endif %}
-        </div>
-    </section>
-    <div class="container" id="container">
-        {% block content %}{% endblock %}
-    </div>
-    <footer id="footer">
-        <p class="copyright">
-            {% if site.author %}Copyright &copy; {{ none|date('%Y') }} {{ site.author }}{% endif %}<br />
-            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
-    </footer>
     {% block extrafooter %}{% endblock %}
 </body>
 </html>
