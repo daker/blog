@@ -1,6 +1,6 @@
 ---
 layout: post.html
-title: On Using The HTML Media Capture in mobile browsers
+title: On Using The HTML Media Capture in Mobile Browsers
 tags: [html5]
 ---
 Media Capture is one of the most interesting [features][0] in HTML5, especially for mobile devices, it allows you to access the camera and the microphone of the device. HTML Media Capture simply extends the ```<input>``` element with a capture attribute.
