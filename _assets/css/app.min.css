@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-02-10, 21:10)
+ * app.min.css 0.0.3 (2014-02-11, 22:18)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -23,7 +23,7 @@ b,strong{font-weight:bold}
 dfn{font-style:italic}
 hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
 mark{background:#ff0;color:#000}
-code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}
+code,kbd,pre,samp{font-family:'Ubuntu Mono',monospace,serif;font-size:1em}
 pre{white-space:pre-wrap}
 q{quotes:"\201C" "\201D" "\2018" "\2019"}
 small{font-size:80%}
