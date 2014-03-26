@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-02-11, 22:18)
+ * app.min.css 0.0.3 (2014-03-26, 22:49)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -114,7 +114,7 @@ hr{position:relative;border:1px solid #e0e0df;margin:15px auto;max-width:480px;w
 .post{margin-bottom:20px}
 .post-header,.post-content{margin:30px auto 0 auto;position:relative}
 .post-content{margin-top:15px;}
-.post-content iframe{margin:0 auto;margin-bottom:10px}
+.post-content iframe{margin:0 auto;margin-bottom:10px;border:0}
 .post-meta-item{font-size:1em;color:#ada79f}
 .post-meta-pubdate,.post-meta-comments{font-size:1em;color:#ada79f}
 .post-title{line-height:1;margin-bottom:5px;font-size:40px;}
