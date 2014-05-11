@@ -218,7 +218,7 @@ window.addEventListener('load', oxide_dom, true);
 
 ### Message API
 
-Oxide does also provide a message API, in this example the script will send a message to Oxide on every request.
+Oxide does also provide a message API, in this example the script will send a message to Oxide and Oxide will reply back.
 
 ```js
 import com.canonical.Oxide 1.0
@@ -266,9 +266,6 @@ exports.onBeforeSendHeaders = function(event) {
     oxide.sendMessage({msg: response_msg});
 };
 ```
-
-
-Sure you can still use the UbuntuWebView
 
 [0]: http://www.chriscoulson.me.uk/blog/?p=196
 [1]: https://en.wikipedia.org/wiki/Do_Not_Track
