@@ -19,7 +19,7 @@ So what does Oxide provide for developers ? It does provide a good chunk a usefu
 
 ## WebView
 
-To declare a Webview using Oxide you need to use to components, ```WebView``` from ```com.canonical.Oxide```
+Before you start make sure to add the ```webview``` to your apparmor policy file, to declare a Webview using Oxide you need to use the ```WebView``` component from ```com.canonical.Oxide```
 
 ```js
 import com.canonical.Oxide 1.0
@@ -104,9 +104,8 @@ Oxide also provides a ```WebContext``` which allow to set other settings
 * userAgentOverrideDelegate
 * userScripts
 
-This example shows how you can use the ```WebContext``` to override the default UserAgent
-
 ### UserAgent
+This example shows how you can use the ```WebContext``` to override the default UserAgent
 
 ```js
 import com.canonical.Oxide 1.0
