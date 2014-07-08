@@ -13,11 +13,10 @@
             </header>
             <div class="post-content">
                 <div class="post-content-inner">
-                    <div class="post-field">{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}</div>
+                    <div class="post-field">{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}
+                        <a class="post-more" href="{{ get_url(post.url) }}" class="post-more">Continue Reading</a>
+                    </div>
                 </div>
-            </div>
-            <div class="post-more">
-                <a class="more" href="{{ get_url(post.url) }}"><span>Continue Reading</span></a>
             </div>
         </article>
     {% endfor %}

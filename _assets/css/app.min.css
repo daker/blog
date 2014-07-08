@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-06-28, 13:53)
+ * app.min.css 0.0.3 (2014-07-08, 21:18)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -143,10 +143,8 @@ input[type="email"]{width:220px}
 input[type="submit"]{font-size:16px;display:block;text-decoration:none;color:#fff;background-color:#e9573f;border:0;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;width:139px;text-transform:uppercase}
 input[type="submit"]:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);box-shadow:inset 0 1px 2px rgba(0,0,0,0.3)}
 #response{font-size:12px;color:#16a765}
-.post-more{margin-top:10px}
-a.more{text-decoration:none;color:#fff;margin-top:10px;padding:5px 10px 6px 10px;background-color:#e9573f;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;font-size:18px;text-transform:uppercase;}
-a.more:hover{text-decoration:none}
-a.more span{background-size:13px 16px;background-image:url("../images/icon-arrow-white.png");background-repeat:no-repeat;background-position:left center;padding-left:20px}
+.post-more{background:#9da2a6 url("../images/dots.png") no-repeat center;-webkit-box-shadow:inset 0 -1px 1px rgba(0,0,0,0.1);box-shadow:inset 0 -1px 1px rgba(0,0,0,0.1);display:inline-block;width:34px;height:16px;border-radius:99px;font-size:0;margin-left:5px;}
+.post-more:hover{background-color:#e9573f}
 .prev-next{border-top:1px solid #e0e0df;overflow:auto}
 .prev-post,.next-post{width:50%;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-top:10px}
 .prev-post>a.title,.next-post>a.title{display:block;font-size:16px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;line-height:1.2;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding:10px 20px 10px 10px;text-align:left}
