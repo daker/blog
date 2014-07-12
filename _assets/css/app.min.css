@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-07-08, 21:18)
+ * app.min.css 0.0.3 (2014-07-12, 23:48)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -145,6 +145,7 @@ input[type="submit"]:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);-
 #response{font-size:12px;color:#16a765}
 .post-more{background:#9da2a6 url("../images/dots.png") no-repeat center;-webkit-box-shadow:inset 0 -1px 1px rgba(0,0,0,0.1);box-shadow:inset 0 -1px 1px rgba(0,0,0,0.1);display:inline-block;width:34px;height:16px;border-radius:99px;font-size:0;margin-left:5px;}
 .post-more:hover{background-color:#e9573f}
+.fb_iframe_widget{top:-7px}
 .prev-next{border-top:1px solid #e0e0df;overflow:auto}
 .prev-post,.next-post{width:50%;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-top:10px}
 .prev-post>a.title,.next-post>a.title{display:block;font-size:16px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;line-height:1.2;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;padding:10px 20px 10px 10px;text-align:left}
@@ -224,83 +225,20 @@ body #bsap_aplink,body #bsap_aplink:hover{display:block;font-size:10px;margin:12
 #bsa_demo_remove:before{content:'x';color:#fff;font-weight:400;font-family:Arial,sans-serif}
 body #bsap_aplink,body #bsap_aplink:hover{display:block;font-size:10px;margin:12px 0 0;text-align:right;font-style:italic}
 #bsap_aplink{color:#fff;text-decoration:none}
-.code{margin-bottom:20px;border-radius:5px;line-height:18px;}
-.code > div{overflow:auto;background-color:#272727;border-radius:5px}
-.highlighttable{margin:0;padding:0;min-width:20px;text-align:initial}
-.highlighttable .linenos,.highlighttable .code{padding:10px;line-height:18px}
-.highlight code,.highlight pre{font-size:13px;color:#fdce93;font-family:'Ubuntu Mono';font-weight:400;margin:0}
-.highlight pre{white-space:pre;word-wrap:break-word}
-.highlighttable .linenos{background-color:#ddd;color:#262626;font-size:12px}
-.linenodiv pre{margin:0;white-space:pre;word-wrap:break-word}
-.highlight .hll{background-color:#222}
-.highlight .c{color:#7f9f7f}
-.highlight .err{color:#e37170;background-color:#3d3535}
-.highlight .g{color:#7f9f7f}
-.highlight .k{color:#f0dfaf}
-.highlight .l{color:#ccc}
-.highlight .n{color:#dcdccc}
-.highlight .o{color:#f0efd0}
-.highlight .x{color:#ccc}
-.highlight .p{color:#41706f}
-.highlight .cm{color:#7f9f7f}
-.highlight .cp{color:#7f9f7f}
-.highlight .c1{color:#7f9f7f}
-.highlight .cs{color:#cd0000;font-weight:bold}
-.highlight .gd{color:#cd0000}
-.highlight .ge{color:#ccc;font-style:italic}
-.highlight .gr{color:#f00}
-.highlight .gh{color:#dcdccc;font-weight:bold}
-.highlight .gi{color:#00cd00}
-.highlight .go{color:#808080}
-.highlight .gp{color:#dcdccc;font-weight:bold}
-.highlight .gs{color:#ccc;font-weight:bold}
-.highlight .gu{color:#800080;font-weight:bold}
-.highlight .gt{color:#0040d0}
-.highlight .kc{color:#dca3a3}
-.highlight .kd{color:#ffff86}
-.highlight .kn{color:#dfaf8f;font-weight:bold}
-.highlight .kp{color:#cdcf99}
-.highlight .kr{color:#cdcd00}
-.highlight .kt{color:#00cd00}
-.highlight .ld{color:#cc9393}
-.highlight .m{color:#8cd0d3}
-.highlight .s{color:#cc9393}
-.highlight .na{color:#9ac39f}
-.highlight .nb{color:#efef8f}
-.highlight .nc{color:#efef8f}
-.highlight .no{color:#ccc}
-.highlight .nd{color:#ccc}
-.highlight .ni{color:#c28182}
-.highlight .ne{color:#c3bf9f;font-weight:bold}
-.highlight .nf{color:#efef8f}
-.highlight .nl{color:#ccc}
-.highlight .nn{color:#8fbede}
-.highlight .nx{color:#ccc}
-.highlight .py{color:#ccc}
-.highlight .nt{color:#9ac39f}
-.highlight .nv{color:#dcdccc}
-.highlight .ow{color:#f0efd0}
-.highlight .w{color:#ccc}
-.highlight .mf{color:#8cd0d3}
-.highlight .mh{color:#8cd0d3}
-.highlight .mi{color:#8cd0d3}
-.highlight .mo{color:#8cd0d3}
-.highlight .sb{color:#cc9393}
-.highlight .sc{color:#cc9393}
-.highlight .sd{color:#cc9393}
-.highlight .s2{color:#cc9393}
-.highlight .se{color:#cc9393}
-.highlight .sh{color:#cc9393}
-.highlight .si{color:#cc9393}
-.highlight .sx{color:#cc9393}
-.highlight .sr{color:#cc9393}
-.highlight .s1{color:#cc9393}
-.highlight .ss{color:#cc9393}
-.highlight .bp{color:#efef8f}
-.highlight .vc{color:#efef8f}
-.highlight .vg{color:#dcdccc}
-.highlight .vi{color:#ffffc7}
-.highlight .il{color:#8cd0d3}
+pre{background:#272727;word-wrap:break-word;padding:10px 15px;color:#fdce93;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;font-family:'Ubuntu Mono';font-weight:400;font-size:15px;}
+pre code{color:#f8f8f2;padding:0;margin:0;border:0;font-family:'Ubuntu Mono';font-weight:400;font-size:15px}
+pre .comment{color:#717e8b}
+pre .constant{color:#ff6b6b;}
+pre .constant.language{color:#268bd2}
+pre .constant.regexp{color:#2aa198}
+pre .storage{color:#4ca9eb}
+pre .inherited-class{font-style:italic}
+pre .entity{color:#ff5454}
+pre .comment.docstring,pre .string{color:#c7f464}
+pre .string.regexp,pre .string.regexp.close,pre .string.regexp.open,pre .support.tag.script,pre .support.tag.style{color:#2aa198}
+pre .keyword,pre .selector{color:#4ecdc4}
+[data-language="c"] .function.call,pre .support{color:#859900}
+pre .support.method,pre .support.property,pre .variable.class,pre .variable.global,pre .variable.instance{color:#839496}
 @media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}
 a,a:visited{text-decoration:underline}
 a[href]:after{content:" (" attr(href) ")"}
