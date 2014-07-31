@@ -10,6 +10,7 @@ Next November I'll be speaking at [JMaghreb][0] conference, i'll be giving a tal
 In this session i'll be covering :
 
 * System architecture
+* Security model
 * QML/HTML5 SDK
 * Platform APIs(udm, push notifications, webview, etc...)
 * Writing & testing apps on the device & the emulator
