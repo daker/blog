@@ -11,8 +11,9 @@ In this session i'll be covering :
 
 * System architecture
 * QML/HTML5 SDK
-* Plateform APIs(udm, push notifications, webview, etc...)
+* Platform APIs(udm, push notifications, webview, etc...)
 * Writing & testing apps on the device & the emulator
+* Publishing apps to the store
 
 The exact time & date of the session will be announced soon, so if you're going to be in or near Morocco this November, make sure to attend!
 
