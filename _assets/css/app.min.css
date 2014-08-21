@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-07-31, 22:34)
+ * app.min.css 0.0.3 (2014-08-21, 18:44)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -83,7 +83,7 @@ dl dt{font-weight:700}
 hr{position:relative;border:1px solid #e0e0df;margin:15px auto;max-width:480px;width:100%}
 *{outline:none}
 .content{width:980px;margin:auto;overflow:hidden}
-#sidebar{width:160px;border-top:0;padding-top:0;float:left;text-align:right;margin:30px 40px 0 0}
+#sidebar{width:160px;border-top:0;padding-top:0;float:left;text-align:right;margin:10px 40px 0 0}
 .site-header{width:980px;margin:0 auto;margin-bottom:30px;overflow:hidden}
 #searchForm{width:300px;float:left;margin-top:5px;}
 #searchForm input[type="search"]{background:#fff url("../images/search_icon.png") center right no-repeat;background-position-x:97%;color:#ccc;font-weight:300;font-style:normal;border:1px solid #dededc;padding:0 10px;padding-right:25px;height:30px;font-size:13px;-webkit-border-radius:999em;-moz-border-radius:999em;border-radius:999em}
@@ -92,7 +92,8 @@ hr{position:relative;border:1px solid #e0e0df;margin:15px auto;max-width:480px;w
 .notfound{margin:0 auto;display:block;background:url("../images/404.png") top center no-repeat;height:219px;padding-top:50px;padding-left:100px;margin-bottom:10px;}
 .notfound h3.fourofour{font-size:60px}
 .post-author-name{font-weight:400;color:#e9573f}
-.post-author-image{display:block;position:relative;overflow:hidden;background:#fff;text-align:right;margin:0;margin-bottom:10px}
+.post-author-image{display:block;position:relative;overflow:hidden;background:#fff;text-align:right;margin:0;margin-bottom:10px;border-radius:50%;width:160px;height:160px;}
+.post-author-image img{width:100%;height:100%}
 .post-published-date p,.post-author-info p{font-family:"Ubuntu",Georgia,Cambria,"Times New Roman",Times,serif;font-weight:400;font-style:italic;font-size:14px;line-height:1.4;color:#666665;word-wrap:break-word}
 .post-author-info{margin:0;padding:0;clear:right;}
 .post-author-info p{margin-bottom:0}
@@ -117,6 +118,7 @@ hr{position:relative;border:1px solid #e0e0df;margin:15px auto;max-width:480px;w
 .post-content iframe{margin:0 auto;margin-bottom:10px;border:0}
 .post-meta-item{font-size:1em;color:#ada79f}
 .post-meta-pubdate,.post-meta-comments{font-size:1em;color:#ada79f}
+.post-meta-comments{padding:10px 5px}
 .post-title{line-height:1;margin-bottom:5px;font-size:40px;}
 .post-title a{font-weight:700;text-decoration:none}
 .post-body h1,.post-body h2,.post-body h3{margin-bottom:10px}

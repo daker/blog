@@ -80,14 +80,14 @@ $(document).ready(function () {
 
             if (title.match(exp) || content.match(exp)) {
                 summary = $(this).find("summary").text();
-                link = $(this).find("link").attr('href');
+                url = $(this).find("link").attr('href');
                 pubDate = new Date($(this).find("updated").text());
                 day = pubDate.getDate();
                 month = monthNames[pubDate.getMonth()];
                 year = pubDate.getFullYear();
                 date = month + ' ' + day + ', ' + year;
-                link = '<header class="post-header"><h2 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h2><time class="post-meta-pubdate" datetime="' + pubDate + '">' + date + '</time></header>';
-                content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + '</div></div></div>';
+                link = '<header class="post-header"><h2 itemprop="name headline" class="post-title"><a href="' + url + '">' + title + '</a></h2><time class="post-meta-pubdate" datetime="' + pubDate + '">' + date + '</time></header>';
+                content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + ' <a class="post-more" href="'+ url +'">Continue Reading</a></div></div></div>';
                 wrapper = '<article class="post" itemscope itemtype="http://schema.org/BlogPosting">' + link + content + '</article>';
                 $(".posts").append($(wrapper));
             }
@@ -106,14 +106,14 @@ $(document).ready(function () {
 
                 if (title.match(exp) || content.match(exp)) {
                     summary = $(this).find("summary").text();
-                    link = $(this).find("link").attr('href');
+                    url = $(this).find("link").attr('href');
                     pubDate = new Date($(this).find("updated").text());
                     day = pubDate.getDate();
                     month = monthNames[pubDate.getMonth()];
                     year = pubDate.getFullYear();
                     date = month + ' ' + day + ', ' + year;
-                    link = '<header class="post-header"><h2 itemprop="name headline" class="post-title"><a href="' + link + '">' + title + '</a></h2><time class="post-meta-pubdate" datetime="' + pubDate + '">' + date + '</time></header>';
-                    content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + '</div></div></div>';
+                    link = '<header class="post-header"><h2 itemprop="name headline" class="post-title"><a href="' + url + '">' + title + '</a></h2><time class="post-meta-pubdate" datetime="' + pubDate + '">' + date + '</time></header>';
+                    content = '<div class="post-content"><div class="post-content-inner"><div class="post-field body">' + summary + ' <a class="post-more" href="'+ url +'">Continue Reading</a></div></div></div>';
                     wrapper = '<article class="post" itemscope itemtype="http://schema.org/BlogPosting">' + link + content + '</article>';
                     $(".posts").append($(wrapper));
                 }

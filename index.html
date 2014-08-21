@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+    <h1>Latest Articles</h1>
     {% for post in posts %}
         {% if site.post_limit and loop.index > site.post_limit %}{% break %}{% endif %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
