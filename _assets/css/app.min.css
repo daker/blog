@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-08-21, 18:51)
+ * app.min.css 0.0.3 (2014-08-21, 20:47)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -91,6 +91,7 @@ hr{position:relative;border:1px solid #e0e0df;margin:15px auto;max-width:480px;w
 #nav a{text-decoration:none;color:#333;padding-left:5px;font-size:15px}
 .notfound{margin:0 auto;display:block;background:url("../images/404.png") top center no-repeat;height:219px;padding-top:50px;padding-left:100px;margin-bottom:10px;}
 .notfound h3.fourofour{font-size:60px}
+.posts-title{font-size:45px}
 .post-author-name{font-weight:400;color:#e9573f}
 .post-author-image{display:block;position:relative;overflow:hidden;background:#fff;text-align:right;margin:0;margin-bottom:10px;border-radius:50%;width:160px;height:160px;}
 .post-author-image img{width:100%;height:100%}
@@ -262,12 +263,13 @@ h2,h3{page-break-after:avoid}
 .content{width:90%}
 #sidebar{float:none;width:auto;text-align:center;margin-right:0;margin-top:0}
 .posts{float:none;width:auto}
+.posts-title{font-size:45px}
 .site-footer{width:100%}
 .posts iframe{width:100%}
-.post-author-image{text-align:center;margin:0 auto}
+.post-author-image{text-align:center;margin:0 auto;width:120px;height:120px}
 .post-published-date{text-align:center}
 .post-published-date:before{width:100%}
-.post-image>img{max-width:100%}
+.post-image > img{max-width:100%}
 .post-tags{display:none}
 .kippt-save-button{margin-top:5px !important}
 .timeline>li,.timeline>li:nth-of-type(even){float:none;width:auto;text-align:center;margin-bottom:10px}
@@ -284,8 +286,9 @@ body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
 .site-footer{width:100%}
 #sidebar{float:none;width:auto;text-align:center;margin-right:0;margin-top:0}
 .posts{float:none;width:auto}
+.posts-title{font-size:45px}
 .posts iframe{width:100%}
-.post-author-image{text-align:center;margin:0 auto}
+.post-author-image{text-align:center;margin:0 auto;width:120px;height:120px}
 .post-published-date{text-align:center}
 .post-published-date:before{width:100%}
 .post-tags{display:none}
@@ -306,9 +309,10 @@ body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
 .site-footer{width:100%}
 #sidebar{float:none;width:auto;text-align:center;margin-right:0;margin-top:0}
 .posts{float:none;width:auto}
+.posts-title{font-size:40px}
 .posts iframe{width:100%}
 .post-title{font-size:30px}
-.post-author-image{text-align:center;margin:0 auto}
+.post-author-image{text-align:center;margin:0 auto;width:120px;height:120px}
 .post-published-date{text-align:center}
 .post-published-date:before{width:100%}
 .post-tags{display:none}

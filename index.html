@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>Latest Articles</h1>
+    <h1 class="posts-title">Latest Articles</h1>
     {% for post in posts %}
         {% if site.post_limit and loop.index > site.post_limit %}{% break %}{% endif %}
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -15,7 +15,7 @@
             <div class="post-content">
                 <div class="post-content-inner">
                     <div class="post-field">{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}
-                        <a class="post-more" href="{{ get_url(post.url) }}" class="post-more">Continue Reading</a>
+                        <a class="post-more" href="{{ get_url(post.url) }}">Continue Reading</a>
                     </div>
                 </div>
             </div>
