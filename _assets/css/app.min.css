@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-08-21, 20:47)
+ * app.min.css 0.0.3 (2014-08-21, 20:57)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -300,6 +300,7 @@ body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
 .row input[type=email]{width:54%}
 body .one .bsa_it_ad{width:160px;margin:0 auto}
 body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
+.bsap{display:none}
 }@media only screen and (max-width: 569px){body{font-size:1em}
 .site-header{float:none;width:90%;text-align:center;margin-bottom:15px}
 #searchForm{display:block;width:100%;text-align:center;margin:0 auto;margin-bottom:10px}
@@ -326,4 +327,5 @@ a.more{font-size:15px}
 .row input[type=submit]{padding:9px 10px}
 body .one .bsa_it_ad{width:160px;margin:0 auto}
 body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
+.bsap{display:none}
 }
