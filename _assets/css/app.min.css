@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2014-08-21, 18:44)
+ * app.min.css 0.0.3 (2014-08-21, 18:51)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -264,7 +264,7 @@ h2,h3{page-break-after:avoid}
 .posts{float:none;width:auto}
 .site-footer{width:100%}
 .posts iframe{width:100%}
-.post-author-image{text-align:center}
+.post-author-image{text-align:center;margin:0 auto}
 .post-published-date{text-align:center}
 .post-published-date:before{width:100%}
 .post-image>img{max-width:100%}
@@ -285,7 +285,7 @@ body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
 #sidebar{float:none;width:auto;text-align:center;margin-right:0;margin-top:0}
 .posts{float:none;width:auto}
 .posts iframe{width:100%}
-.post-author-image{text-align:center}
+.post-author-image{text-align:center;margin:0 auto}
 .post-published-date{text-align:center}
 .post-published-date:before{width:100%}
 .post-tags{display:none}
@@ -308,7 +308,7 @@ body #bsap_aplink,body #bsap_aplink:hover{width:160px;margin:0 auto}
 .posts{float:none;width:auto}
 .posts iframe{width:100%}
 .post-title{font-size:30px}
-.post-author-image{text-align:center}
+.post-author-image{text-align:center;margin:0 auto}
 .post-published-date{text-align:center}
 .post-published-date:before{width:100%}
 .post-tags{display:none}
