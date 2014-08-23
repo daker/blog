@@ -6,13 +6,13 @@
 {% block extrahead %}<title>{{ post.title }} — {{ site.title }}</title>
     <meta name="description" content="{{ post.excerpt|striptags|safe }}">
     <meta name="keywords" content="{% for tag in post.tags %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}">
-    <meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="og:image" content="http://daker.me{{ get_asset('images/pp_sketch.jpg') }}">
     <meta property="og:title" content="{{ post.title }} — {{ site.title }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@AdnaneBelmadiaf">
-    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/pp_sketch.jpg') }}">
     <meta property="twitter:title" content="{{ post.title }} — {{ site.title }}">
     <meta property="twitter:url" content="http://daker.me{{ get_url(post.url) }}">
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
@@ -55,7 +55,7 @@
         <a class="FlattrButton" style="display:none;" href="http://daker.me{{ get_url(post.url) }}" title="{{ post.title }}" data-flattr-uid="daker" data-flattr-button="compact" data-flattr-tags="{% for tag in post.tags %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}" data-flattr-category="text" data-flattr-lang="en_US">{{ post.excerpt|striptags|safe }}</a>
         </div>
         <div class="post-social-button">
-            <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" data-url="http://daker.me{{ get_url(post.url) }}" data-via="AdnaneBelmadiaf" data-picture="http://daker.me{{ get_asset('images/avatar.png') }}"></a>
+            <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" data-url="http://daker.me{{ get_url(post.url) }}" data-via="AdnaneBelmadiaf" data-picture="http://daker.me{{ get_asset('images/pp_sketch.jpg') }}"></a>
         </div>
 
         <div class="post-social-button">

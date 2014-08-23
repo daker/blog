@@ -1,9 +1,9 @@
 base_url: /
 domain: daker.me
 author: Adnane Belmadiaf
-description: Random thoughts on code, life, and future!
+description: Blog of Adnane Belmadiaf Front-end Developer based in Morocco.
 email: daker@ubuntu.com
-title: Adnane Belmadiaf's Blog
+title: Adnane Belmadiaf's Blog - Front-end Developer
 date_format: "%B %d, %Y"
 post_limit: 15
 posts_url: /<year>/<month>/<title>.html

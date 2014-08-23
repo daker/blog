@@ -25,13 +25,13 @@
     <link rel="stylesheet" href="{{ get_asset('css/app.min.css') }}" type="text/css">
     {% block extrahead %}<title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
-    <meta property="og:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="og:image" content="http://daker.me{{ get_asset('images/pp_sketch.jpg') }}">
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Adnane Belmadiaf">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@AdnaneBelmadiaf">
-    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/avatar.png') }}">
+    <meta property="twitter:image" content="http://daker.me{{ get_asset('images/pp_sketch.jpg') }}">
     <meta property="twitter:title" content="{{ site.title }}">
     <meta property="twitter:url" content="http://daker.me">
     <meta name="twitter:creator" content="@AdnaneBelmadiaf">
@@ -41,7 +41,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ get_asset('images/apple-touch-icon-precomposed-144.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ get_asset('images/apple-touch-icon-precomposed-114.png') }}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ get_asset('images/apple-touch-icon-precomposed-72.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ get_asset('images/apple-touch-icon-precomposed.png') }}">
     <link rel="shortcut icon" href="{{ get_asset('images/favicon.ico') }}" type="image/x-icon">
     {% if site.feed %}<link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">
     <link rel="alternate" href="{{ get_url('feed-ubuntuplanet.xml') }}" type="application/atom+xml">{% endif %}
@@ -61,10 +61,10 @@
 
     <main class="content">
         <aside id="sidebar">
-            <a href="{{ get_url() }}" class="post-author-image" title="Homepage">
-                <img src="{{ get_asset('images/pp_sketch.jpg') }}" alt="Adnane Belmadiaf's Profile Picture">
-            </a>
             <div class="post-author-info">
+                <a href="{{ get_url() }}" class="post-author-image" title="Homepage">
+                    <img src="{{ get_asset('images/pp_sketch.jpg') }}" alt="Adnane Belmadiaf's Profile Picture">
+                </a>
                 <span class="post-author-name">Adnane Belmadiaf</span>
                 <p>
                     Front-end developer
