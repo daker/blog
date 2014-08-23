@@ -1,7 +1,7 @@
 ---
 layout: post.html
 title: Adding Persona authentication to your django project
-tags: [django, persona, ubuntuplanet]
+tags: [django, persona, ubuntuplanet, mozilla, python]
 ---
 [Persona][0] is a decentralized login system made by [Mozilla][3] that aims to eliminate site-specific passwords so you can log in with your existing email accounts without having to type in a password.
 
@@ -10,7 +10,7 @@ tags: [django, persona, ubuntuplanet]
 ## Installation
 Mozilla provides a library called ```django-browserid``` that integrates Persona authentication into Django, so you can simply added to to your ```requirements.txt``` or just install via pip :
 
-```sh
+```shell
 $ sudo pip install django-browserid
 ```
 
@@ -62,7 +62,12 @@ SITE_URL = 'https://example.com'
 
 I have created a working demo project on [github][1] to play with, you can still check the [docs][2] or comment here if it doesn't work for you.
 
+## Mentioned on
+
+* [Django Round-Up Podcast][4] - Django Round-Up #10
+
 [0]:https://www.mozilla.org/en-US/persona/
 [1]:https://github.com/daker/django-persona-demo
 [2]:http://django-browserid.readthedocs.org/en/v0.9/details/troubleshooting.html
 [3]:https://www.mozilla.org/
+[4]:https://lincolnloop.github.io/round-up/#round-up-10
