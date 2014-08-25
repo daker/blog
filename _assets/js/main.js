@@ -28,18 +28,6 @@ $(document).ready(function () {
     });
 
 
-    $.ajax({
-        url: '/feed.xml',
-        dataType: 'xml',
-        type: 'GET',
-        success: function (xml) {
-            posts = xml;
-        },
-        error: function () {
-            console.log("I am sorry, But I can't fetch the RSS feed");
-        }
-    });
-
     $('#signup').submit(function () {
         // update user interface
         $('#response').html('Adding email address...');
@@ -71,6 +59,18 @@ $(document).ready(function () {
 
     $(window).hashchange(function () {
         var keyword = location.hash.replace(/^#/, '');
+
+        $.ajax({
+            url: '/feed.xml',
+            dataType: 'xml',
+            type: 'GET',
+            success: function (xml) {
+                posts = xml;
+            },
+            error: function () {
+                console.log("I am sorry, But I can't fetch the RSS feed");
+            }
+        });
         $(".posts").empty();
 
         $(posts).find('entry').each(function () {
@@ -97,6 +97,17 @@ $(document).ready(function () {
 
     $('#q').keypress(function (e) {
         if (e.which == 13) {
+            $.ajax({
+                url: '/feed.xml',
+                dataType: 'xml',
+                type: 'GET',
+                success: function (xml) {
+                    posts = xml;
+                },
+                error: function () {
+                    console.log("I am sorry, But I can't fetch the RSS feed");
+                }
+            });
             $(".posts").empty();
             var keyword = $(this).val();
             $(posts).find('entry').each(function () {
