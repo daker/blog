@@ -3,7 +3,7 @@ title: Truncate multiline text with ellipsis in CSS
 tags: [css, ellipsis]
 ---
 
-Ellipsis multiline text using ```text-overflow``` and ```-webkit-line-clamp```
+Ellipsis multiline text using ```text-overflow``` and ```-webkit-line-clamp``` :
 
     .multiline-ellipsis {
         display: block;
