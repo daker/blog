@@ -15,6 +15,8 @@ module.exports = function(grunt) {
       compile: {
         files: {
           '_assets/css/app.min.css': '_assets/css/styles.styl',
+          '_assets/css/mobile.min.css': '_assets/css/modules/_mobile.styl',
+          '_assets/css/print.min.css': '_assets/css/modules/_print.styl',
         }
       }
     }
