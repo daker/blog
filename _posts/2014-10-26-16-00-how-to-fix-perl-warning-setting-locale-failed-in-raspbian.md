@@ -3,7 +3,7 @@ layout: post.html
 title: How to fix Perl warning setting locale failed on Raspbian
 tags: [raspberrypi]
 ---
-Last week i was trying to make my Raspberry Pi work again, and while reinstalling and upgrading Raspbian OS packages i run into an issue where a perl waring is displayed.
+Last week i was trying to make my Raspberry Pi work again, and while reinstalling and upgrading Raspbian OS packages i run into an issue where a perl warning is displayed.
 
 ![Raspberry Pi Logo](/assets/posts/rpi-logo.png)
 
