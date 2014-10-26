@@ -31,7 +31,7 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 ```
 
 ## Solution
-You can fix the issue by setting the locale can be set en_US.UTF-8 for example:
+You can fix the issue by setting the locale to en_US.UTF-8 for example:
 
 ```shell
 $ export LANGUAGE=en_US.UTF-8
