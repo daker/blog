@@ -3,7 +3,7 @@ layout: post.html
 title: Fix Morocco borders on Google Maps
 tags: [gmap]
 ---
-Everyone needs to pay attention when using Morocco Map, specially if it doesn't include the Sahara, so here i'll explain how to fix the borders in Google Map.
+Everyone needs to pay attention when using Morocco Map, specially if it doesn't include the Sahara, so here i'll explain how to fix the borders in Google Maps.
 
 The first thing you need to do is to create a simple map :
 
