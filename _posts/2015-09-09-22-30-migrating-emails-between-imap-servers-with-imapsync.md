@@ -33,4 +33,4 @@ and now let's start the migration
 $ imapsync --host1 $HOST1 --user1 $EMAIL --password1 '' --tls1 -port1 $PORT1 -authmech1 PLAIN --host2 $HOST2 --user2 $EMAIL --password2 '' --tls2 -port2 $PORT2 --reconnectretry1 1 --reconnectretry2 1 --useheader 'Message-Id' --skipsize
 ```
 
-Migrating accounts can take longer depending on thir size.
+Migrating accounts can take longer depending on their size.
