@@ -22,6 +22,8 @@
     {% if site.author %}<meta name="author" content="{{ site.author }}">
     <link rel="author" href="https://plus.google.com/101694416703170881163" />{% endif %}
     <link rel="stylesheet" href="{{ get_asset('css/app.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ get_asset('css/mobile.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ get_asset('css/print.min.css') }}" type="text/css" media="print" />
     {% block extrahead %}<title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:image" content="http://daker.me{{ get_asset('images/pp_sketch.jpg') }}">

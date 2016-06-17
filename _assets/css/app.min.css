@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2016-05-17, 17:14)
+ * app.min.css 0.0.3 (2016-06-17, 19:03)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -70,7 +70,7 @@ td,th{padding:.3rem 1rem}
 tbody > tr:nth-child(odd){background-color:$line-breaks-color;border-top:1px solid $muted-text-color;border-bottom:1px solid $muted-text-color}
 a{color:#e9573f;font-weight:400;text-decoration:none;-webkit-transition:color .3s;transition:color .3s;}
 a:hover{color:#d44a34;text-decoration:underline}
-h1,h2,h3,h4,h5,h6{font-family:'Ubuntu',sans-serif;font-weight:700;line-height:1.3;margin:0;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,h6{font-family:'Ubuntu',sans-serif;font-weight:300;line-height:1.3;margin:0;text-rendering:optimizeLegibility}
 h1{font-size:48.5px}
 h2{font-size:31.5px}
 h3{font-size:26.5px}
@@ -191,6 +191,7 @@ input[type="submit"]:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);-
 .resume ul{list-style-type:disc;margin:15px 0 15px 40px;}
 .resume ul ul{list-style-type:circle;margin:5px 0 15px 40px}
 .resume em{color:#aaa}
+.location{color:#aaa;text-align:center}
 .social{width:980px;margin:0 auto;margin-bottom:30px;text-align:center;}
 .social a{text-decoration:none;color:#555;padding-right:10px;font-size:30px;line-height:1.5;-webkit-transition:color 200ms ease-in;-moz-transition:color 200ms ease-in;-o-transition:color 200ms ease-in;transition:color 200ms ease-in}
 [data-icon]:before{font-family:'icomoon';content:attr(data-icon);speak:none;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
