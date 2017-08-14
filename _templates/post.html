@@ -19,7 +19,10 @@
     <meta property="og:description" content="{{ post.excerpt|striptags|safe }}">
     <meta name="twitter:description" content="{{ post.excerpt|striptags|safe }}">
     {% if prev %}<link rel="prev" title="{{ prev.title }}" href="http://daker.me{{ get_url(prev.url) }}" />{% endif %}
-    {% if next %}<link rel="next" title="{{ next.title }}" href="http://daker.me{{ get_url(next.url) }}" />{% endif %}{% endblock %}
+    {% if next %}<link rel="next" title="{{ next.title }}" href="http://daker.me{{ get_url(next.url) }}" />{% endif %}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="{{ get_asset('css/atom-one-dark.css') }}">
+    {% endblock %}
 
 {% block published %}
 <div class="post-published-date"> <strong>Published</strong>
@@ -112,14 +115,8 @@
 
 
 {% block extrafooter %}
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/rainbow.min.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/languages/css.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/languages/html.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/languages/javascript.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/languages/python.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/languages/qml.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ get_asset('js/languages/shell.js') }}"></script>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript" src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script type="text/javascript">

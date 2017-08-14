@@ -1,5 +1,5 @@
 /*!
- * app.min.css 0.0.3 (2017-08-10, 22:33)
+ * app.min.css 0.0.3 (2017-08-14, 21:46)
  * https://daker.me/
  * CC BY-SA 3.0
  */
@@ -55,7 +55,7 @@ table{border-collapse:collapse;border-spacing:0}
 ::-moz-selection,::selection{color:#fff;color:rgba(255,255,255,0.85);background:#cc675b}
 html{height:100%;max-height:100%}
 body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;height:100%;max-height:100%;font-family:'Ubuntu',Tahoma,sans-serif;font-size:18px;font-weight:400;line-height:1.6em;background:#fff;color:#555;border-top:3px solid #e9573f}
-code{font-size:18px;color:#a29a9a}
+code{font-size:15px}
 video{margin:0 auto;display:block}
 figure{margin:0;}
 figure > img{margin:0 auto;display:block;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;max-width:700px}
@@ -217,30 +217,3 @@ input[type="submit"]:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);-
 .work li:nth-child(4n + 4){margin-right:0}
 .work li:hover{background:#e9573f;border:1px solid #e9573f;transition:all .2s;-moz-transition:all .2s;-webkit-transition:all .2s;-o-transition:all .2s}
 .work li img{padding:0;width:100%;background:#fafafa;border:none;margin:0;display:block;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}
-body .one .bsa_it_ad{background:#e96d65;border:none;font-family:inherit;padding:10px;margin:0;text-align:center;border-radius:5px;color:#ffe8e7;}
-body .one .bsa_it_ad .bsa_it_i{display:block;padding:0;float:none;margin:0 0 5px;}
-body .one .bsa_it_ad .bsa_it_i img{padding:0;border:none;display:block;margin:0 auto}
-body .one .bsa_it_ad .bsa_it_t{padding:6px 0;color:#ffe8e7}
-body .one .bsa_it_ad .bsa_it_d{padding:0;font-size:12px;color:#ffe8e7}
-body .one .bsa_it_p{display:none}
-body #bsap_aplink,body #bsap_aplink:hover{display:block;font-size:10px;margin:12px 0 0;text-align:right;font-style:italic}
-#bsa_demo{text-align:center;width:180px;height:auto;right:15px;top:15px;position:fixed;background:rgba(233,109,101,0.8);border:none;z-index:1000000;color:#ffe8e7;border-radius:5px;padding:10px}
-#bsa_demo_remove{opacity:.4;width:24px;height:24px;position:absolute;top:0;right:0;background:#999;text-align:center;cursor:pointer;}
-#bsa_demo_remove:hover{background:#777}
-#bsa_demo_remove:before{content:'x';color:#fff;font-weight:400;font-family:Arial,sans-serif}
-body #bsap_aplink,body #bsap_aplink:hover{display:block;font-size:10px;margin:12px 0 0;text-align:right;font-style:italic}
-#bsap_aplink{color:#fff;text-decoration:none}
-pre{background:#272727;word-wrap:break-word;padding:10px 15px;color:#fdce93;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;font-family:'Ubuntu Mono';font-weight:400;font-size:15px;}
-pre code{color:#f8f8f2;padding:0;margin:0;border:0;font-family:'Ubuntu Mono';font-weight:400;font-size:15px}
-pre .comment{color:#717e8b}
-pre .constant{color:#ff6b6b;}
-pre .constant.language{color:#268bd2}
-pre .constant.regexp{color:#2aa198}
-pre .storage{color:#4ca9eb}
-pre .inherited-class{font-style:italic}
-pre .entity{color:#ff5454}
-pre .comment.docstring,pre .string{color:#c7f464}
-pre .string.regexp,pre .string.regexp.close,pre .string.regexp.open,pre .support.tag.script,pre .support.tag.style{color:#2aa198}
-pre .keyword,pre .selector{color:#4ecdc4}
-[data-language="c"] .function.call,pre .support{color:#859900}
-pre .support.method,pre .support.property,pre .variable.class,pre .variable.global,pre .variable.instance{color:#839496}
